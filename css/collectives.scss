@@ -1,21 +1,24 @@
 .collectives{
     width: 80%;
     cursor: default;
-    margin: 140px auto 0;
+    margin: 140px auto 100px;
+    @include clearfix;
     h4{
-        display: inline-block;
-        vertical-align: top;
+        float: left;
         width: 25%; 
     }
-    p{
-        width: 74%;       
-        line-height: 1.5; 
-        display: inline-block;
-    }
-    iframe{
-        margin: 50px 0 50px 140px;;
-        border: 5px solid #f4f6f9;
-        width: 55%;
-        height: 300px;
+    .collective-content{
+        float: left;
+        width: 70%;
+        p{      
+            line-height: 1.5; 
+            margin-bottom: 30px;
+        }
+        iframe{
+            margin: 40px 0 50px -100px;
+            border: 5px solid #f4f6f9;
+            width: 80%;
+            height: 300px;
+        }
     }
 }

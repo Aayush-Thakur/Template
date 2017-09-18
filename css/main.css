@@ -198,19 +198,24 @@ header .subscription {
 .collectives {
   width: 80%;
   cursor: default;
-  margin: 140px auto 0; }
+  margin: 140px auto 100px; }
+  .collectives:after {
+    clear: both;
+    display: table;
+    content: ""; }
   .collectives h4 {
-    display: inline-block;
-    vertical-align: top;
+    float: left;
     width: 25%; }
-  .collectives p {
-    width: 74%;
-    line-height: 1.5;
-    display: inline-block; }
-  .collectives iframe {
-    margin: 50px 0 50px 140px;
-    border: 5px solid #f4f6f9;
-    width: 55%;
-    height: 300px; }
+  .collectives .collective-content {
+    float: left;
+    width: 70%; }
+    .collectives .collective-content p {
+      line-height: 1.5;
+      margin-bottom: 30px; }
+    .collectives .collective-content iframe {
+      margin: 40px 0 50px -100px;
+      border: 5px solid #f4f6f9;
+      width: 80%;
+      height: 300px; }
 
 /*# sourceMappingURL=main.css.map */
