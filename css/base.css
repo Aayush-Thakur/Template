@@ -1,0 +1,54 @@
+* {
+  border: 1px solid red;
+  box-sizing: border-box; }
+
+h1 {
+  color: #5e6265;
+  font: normal 60px Ubuntu medium; }
+
+h2 {
+  color: #fff;
+  font: normal 48px Ubuntu medium;
+  background: #000; }
+
+h3 {
+  color: #8a9097;
+  font: italic 20px Ubuntu medium; }
+
+h4 {
+  color: #5e6265;
+  font: normal 15px Ubuntu medium; }
+
+h5 {
+  color: #878d92;
+  font: normal 13px Ubuntu medium; }
+
+article h1 {
+  color: #fff;
+  font: normal 16px Ubuntu medium; }
+
+nav {
+  color: #7d8185;
+  font: normal 13px Ubuntu medium; }
+  nav a {
+    display: inline-block;
+    width: 25%; }
+
+p {
+  color: #4d5256;
+  font: normal 15px Ubuntu medium; }
+
+button {
+  font: normal 10px Ubuntu medium; }
+  button .primary {
+    padding: 10px 5px;
+    color: #fff;
+    background: #59cbc7; }
+  button .secondary {
+    color: #59cbc7;
+    border: 2px solid #59cbc7; }
+
+*:hover {
+  color: #4cafac; }
+
+/*# sourceMappingURL=base.css.map */

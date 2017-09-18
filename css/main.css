@@ -1,0 +1,216 @@
+body {
+  margin: 0; }
+
+h1 {
+  color: #5e6265;
+  font: normal 60px Ubuntu medium; }
+
+h2 {
+  color: #fff;
+  font: normal 48px Ubuntu medium;
+  background: #000; }
+
+h3 {
+  color: #8a9097;
+  font: italic 20px Ubuntu medium; }
+
+h4 {
+  color: #5e6265;
+  font: normal 15px Ubuntu medium; }
+  h4:after {
+    display: block;
+    width: 30px;
+    margin: 15px 0 0 0;
+    border-top: 2px solid #59cbc7;
+    content: ""; }
+
+h5 {
+  color: #878d92;
+  font: normal 13px Ubuntu medium; }
+
+article h1 {
+  color: #fff;
+  font: normal 16px Ubuntu medium; }
+
+nav {
+  color: #7d8185; }
+
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  font: normal 13px Ubuntu medium;
+  cursor: pointer; }
+
+p {
+  color: #4d5256;
+  word-spacing: 3px;
+  letter-spacing: 1.5px;
+  font: normal 15px Ubuntu medium; }
+
+button {
+  font: normal 13px Ubuntu medium;
+  cursor: pointer; }
+  button.primary {
+    border: none;
+    letter-spacing: 3px;
+    padding: 20px;
+    color: #fff;
+    background: #59cbc7; }
+  button.secondary {
+    color: #59cbc7;
+    border: 2px solid #59cbc7; }
+
+.bold {
+  font-style: bold; }
+
+.italic {
+  font-style: italic; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline-block; }
+
+*:hover {
+  transition-delay: 200ms;
+  transition-timing-function: ease; }
+
+header:after {
+  clear: both;
+  display: table;
+  content: ""; }
+header .logo {
+  float: left;
+  background: url("../images/Logo.png") center/cover;
+  height: 110px;
+  width: 25%;
+  padding: 0;
+  margin: 0; }
+header nav, header .subscription {
+  padding: 30px 0; }
+header nav {
+  float: left;
+  margin-left: 130px;
+  box-sizing: border-box; }
+  header nav:after {
+    clear: both;
+    display: table;
+    content: ""; }
+  header nav ul li {
+    padding: 0 30px; }
+    header nav ul li a {
+      height: 36px;
+      padding: 0 0 10px 0;
+      color: #5e6265;
+      text-align: center;
+      word-spacing: 2px; }
+      header nav ul li a:hover {
+        border-bottom: 2px solid #4cafac;
+        color: #4cafac;
+        transition-duration: 200ms; }
+header .right-border {
+  border-right: 1px solid #8a9097; }
+header .subscription {
+  float: right;
+  background: url("../images/Mobile Presentation.jpg");
+  width: 15%;
+  line-height: 46px;
+  height: 50px; }
+  header .subscription label {
+    padding: 10px 20px; }
+    header .subscription label a {
+      color: #59cbc7;
+      padding: 0 0 10px 0;
+      letter-spacing: 2px; }
+      header .subscription label a:hover {
+        border-bottom: 2px solid #4cafac;
+        color: #4cafac;
+        transition-duration: 200ms; }
+  header .subscription .search-icon {
+    background: url("../images/search-icon.png") no-repeat center 0/70%;
+    display: block;
+    margin: 5px 15px 0 0;
+    float: right;
+    width: 50px;
+    height: 30px; }
+
+.carousel-wrapper {
+  width: 99%;
+  cursor: default;
+  margin: 10px auto;
+  overflow: hidden;
+  max-height: 550px; }
+  .carousel-wrapper ul {
+    width: 300%;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .carousel-wrapper ul:after {
+      clear: both;
+      display: table;
+      content: ""; }
+  .carousel-wrapper li {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 500px; }
+    .carousel-wrapper li .layer {
+      margin: 0;
+      color: #fff;
+      position: relative;
+      padding: 0;
+      width: 100%;
+      height: inherit;
+      background-color: rgba(138, 144, 151, 0.7); }
+    .carousel-wrapper li .carousel-content {
+      color: #fff;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      padding: 80px 0; }
+    .carousel-wrapper li p {
+      color: #fff;
+      margin: 60px 0 0 0;
+      padding: 30px;
+      border-top: 1px solid #8a9097; }
+    .carousel-wrapper li.carousel-image-first {
+      background: url("../images/carousel-image1.png") no-repeat center/cover; }
+    .carousel-wrapper li.carousel-image-second {
+      background: url("../images/carousel-image2.png") no-repeat center/cover; }
+    .carousel-wrapper li.carousel-image-third {
+      background: url("../images/carousel-image3.png") no-repeat center/cover; }
+    .carousel-wrapper li h2 {
+      margin: 0;
+      line-height: 1.5;
+      background: none;
+      font-style: italic; }
+    .carousel-wrapper li .primary {
+      margin-top: 50px; }
+    .carousel-wrapper li .popUp {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      padding: 20px;
+      border: 1px solid #8a9097; }
+
+.collectives {
+  width: 80%;
+  cursor: default;
+  margin: 140px auto 0; }
+  .collectives h4 {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%; }
+  .collectives p {
+    width: 74%;
+    line-height: 1.5;
+    display: inline-block; }
+  .collectives iframe {
+    margin: 50px 0 50px 140px;
+    border: 5px solid #f4f6f9;
+    width: 55%;
+    height: 300px; }
+
+/*# sourceMappingURL=main.css.map */

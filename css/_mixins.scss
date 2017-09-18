@@ -1,0 +1,16 @@
+@mixin clearfix{
+    &:after{
+        clear: both;
+        display: table;
+        content: "";
+    }
+}
+@mixin box-sizing{
+    box-sizing: border-box;
+}
+
+@mixin hover{
+    border-bottom: 2px solid #4cafac;
+    color: #4cafac;
+    transition-duration: 200ms;
+}

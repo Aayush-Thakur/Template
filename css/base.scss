@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+}
+h1{
+    color: #5e6265;
+    font: normal 60px Ubuntu medium;
+}
+h2{
+    color: #fff;
+    font: normal 48px Ubuntu medium;
+    background: #000;
+}
+h3{
+    color: #8a9097;
+    font: italic 20px Ubuntu medium;
+}
+h4{
+    color: #5e6265;
+    font: normal 15px Ubuntu medium;
+    &:after{
+        display: block;
+        width: 30px;
+        margin: 15px 0 0 0 ;
+        border-top: 2px solid #59cbc7;
+        content: "";
+    }
+}
+h5{
+    color: #878d92;
+    font: normal 13px Ubuntu medium;
+}
+article{
+    h1{
+        color: #fff;
+        font: normal 16px Ubuntu medium;
+    }
+}
+nav{
+    color: #7d8185;
+}
+a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 5px;
+    @include box-sizing;
+    font: normal 13px Ubuntu medium;
+    cursor: pointer;
+}
+p{
+    color: #4d5256;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+    font: normal 15px Ubuntu medium;
+}
+button{
+    font: normal 13px Ubuntu medium;
+    cursor: pointer;    
+    &.primary{
+        border: none;
+        letter-spacing: 3px;
+        padding: 20px;
+        color: #fff;
+        background: #59cbc7;
+    }
+    &.secondary{
+        color: #59cbc7;
+        border: 2px solid #59cbc7;
+    }
+}
+.bold{
+    font-style: bold;
+}
+.italic{
+    font-style: italic;
+}
+ul{
+    list-style: none;
+    li{
+        display: inline-block;
+    }
+}
+*:hover{
+    transition-delay: 200ms;
+    transition-timing-function: ease;
+}
