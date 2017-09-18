@@ -1,0 +1,81 @@
+.crew{
+    background: #f4f6f9;
+    padding: 80px 50px;
+    h4{
+        margin: 50px 0 30px 100px;
+    }
+    .skillsets, .crew-members{
+        width: 96%;
+        @include box-sizing;
+        @include clearfix;
+    }
+    .crew-members{
+        margin: 60px auto;
+        article{
+            float: left;
+            width: 23%;
+            height: 300px;
+            .hover-layer{
+                display: none;
+                background: rgba(91, 201, 197, 0.7);
+                text-align: center;
+                padding: 50px 0;
+                @include box-sizing;
+                height: inherit;
+                h2{
+                    background: transparent;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+                p{
+                    padding: 10px 20px;
+                    word-spacing: 0;
+                    letter-spacing: 0;
+                    color: #fff;
+                }
+            }
+            &:hover{
+                .hover-layer{
+                    display: block;
+                }
+            }
+            &.peter{
+                margin-right: 15px;
+                background: url("../images/Peter.png") no-repeat;
+            }
+            &.blaz{
+                margin: 0 15px;
+                background: url("../images/Blaz.png") no-repeat;
+            }
+            &.maryLou{
+                margin: 0 15px;
+                background: url("../images/Mary Lou.png") no-repeat;
+            }
+            &.kobe{
+                margin-left: 15px;
+                background: url("../images/Dude.png") no-repeat;
+            }
+            .social-links{
+                a{
+                    width: 20px;
+                    height: 20px;
+                    padding: 0;
+                    display: inline-block;
+                }
+                .twitter{
+                    margin-right: 5px;
+                    background: url("../images/twitter_icon.png") no-repeat center / 70%;
+                }
+                .linkedin{
+                    margin-left: 5px;
+                    background: url("../images/linkedin _icon.png") no-repeat center / 70%;
+                }
+            }
+        }
+    }
+    .skillsets{
+        margin: 30px auto;
+        border: 1px solid red;
+        
+    }
+}

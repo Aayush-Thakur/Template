@@ -1,22 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
   margin: 0; }
 
 h1 {
   color: #5e6265;
-  font: normal 60px Ubuntu medium; }
+  font: normal 60px 'Raleway', sans-serif; }
 
 h2 {
   color: #fff;
-  font: normal 48px Ubuntu medium;
+  font: normal 48px 'Raleway', sans-serif;
   background: #000; }
 
 h3 {
   color: #8a9097;
-  font: italic 20px Ubuntu medium; }
+  font: italic 20px 'Raleway', sans-serif; }
 
 h4 {
   color: #5e6265;
-  font: normal 15px Ubuntu medium; }
+  font: bold 15px 'Raleway', sans-serif; }
   h4:after {
     display: block;
     width: 30px;
@@ -26,11 +27,11 @@ h4 {
 
 h5 {
   color: #878d92;
-  font: normal 13px Ubuntu medium; }
+  font: normal 13px 'Raleway', sans-serif; }
 
 article h1 {
   color: #fff;
-  font: normal 16px Ubuntu medium; }
+  font: normal 16px 'Raleway', sans-serif; }
 
 nav {
   color: #7d8185; }
@@ -40,17 +41,18 @@ a {
   text-align: center;
   padding: 10px 5px;
   box-sizing: border-box;
-  font: normal 13px Ubuntu medium;
+  font: normal 13px 'Raleway', sans-serif;
   cursor: pointer; }
 
 p {
   color: #4d5256;
   word-spacing: 3px;
   letter-spacing: 1.5px;
-  font: normal 15px Ubuntu medium; }
+  line-height: 27px !important;
+  font: normal 15px 'Raleway', sans-serif; }
 
 button {
-  font: normal 13px Ubuntu medium;
+  font: normal 13px 'Raleway', sans-serif;
   cursor: pointer; }
   button.primary {
     border: none;
@@ -77,6 +79,10 @@ ul {
   transition-delay: 200ms;
   transition-timing-function: ease; }
 
+figure, figcaption {
+  margin: 0;
+  padding: 0; }
+
 header:after {
   clear: both;
   display: table;
@@ -102,6 +108,7 @@ header nav {
     padding: 0 30px; }
     header nav ul li a {
       height: 36px;
+      font-weight: bold;
       padding: 0 0 10px 0;
       color: #5e6265;
       text-align: center;
@@ -122,6 +129,7 @@ header .subscription {
     padding: 10px 20px; }
     header .subscription label a {
       color: #59cbc7;
+      text-transform: uppercase;
       padding: 0 0 10px 0;
       letter-spacing: 2px; }
       header .subscription label a:hover {
@@ -131,7 +139,7 @@ header .subscription {
   header .subscription .search-icon {
     background: url("../images/search-icon.png") no-repeat center 0/70%;
     display: block;
-    margin: 5px 15px 0 0;
+    margin: 7px 14px 0 0;
     float: right;
     width: 50px;
     height: 30px; }
@@ -210,12 +218,74 @@ header .subscription {
     float: left;
     width: 70%; }
     .collectives .collective-content p {
-      line-height: 1.5;
       margin-bottom: 30px; }
     .collectives .collective-content iframe {
       margin: 40px 0 50px -100px;
       border: 5px solid #f4f6f9;
       width: 80%;
       height: 300px; }
+
+.crew {
+  background: #f4f6f9;
+  padding: 80px 50px; }
+  .crew h4 {
+    margin: 50px 0 30px 100px; }
+  .crew .skillsets, .crew .crew-members {
+    width: 96%;
+    box-sizing: border-box; }
+    .crew .skillsets:after, .crew .crew-members:after {
+      clear: both;
+      display: table;
+      content: ""; }
+  .crew .crew-members {
+    margin: 60px auto; }
+    .crew .crew-members article {
+      float: left;
+      width: 23%;
+      height: 300px; }
+      .crew .crew-members article .hover-layer {
+        display: none;
+        background: rgba(91, 201, 197, 0.7);
+        text-align: center;
+        padding: 50px 0;
+        box-sizing: border-box;
+        height: inherit; }
+        .crew .crew-members article .hover-layer h2 {
+          background: transparent;
+          font-size: 15px;
+          text-transform: uppercase; }
+        .crew .crew-members article .hover-layer p {
+          padding: 10px 20px;
+          word-spacing: 0;
+          letter-spacing: 0;
+          color: #fff; }
+      .crew .crew-members article:hover .hover-layer {
+        display: block; }
+      .crew .crew-members article.peter {
+        margin-right: 15px;
+        background: url("../images/Peter.png") no-repeat; }
+      .crew .crew-members article.blaz {
+        margin: 0 15px;
+        background: url("../images/Blaz.png") no-repeat; }
+      .crew .crew-members article.maryLou {
+        margin: 0 15px;
+        background: url("../images/Mary Lou.png") no-repeat; }
+      .crew .crew-members article.kobe {
+        margin-left: 15px;
+        background: url("../images/Dude.png") no-repeat; }
+      .crew .crew-members article .social-links a {
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        display: inline-block; }
+      .crew .crew-members article .social-links .twitter {
+        margin-right: 5px;
+        background: url("../images/twitter_icon.png") no-repeat center/70%; }
+      .crew .crew-members article .social-links .linkedin {
+        margin-left: 5px;
+        background: url("../images/linkedin _icon.png") no-repeat center/70%; }
+  .crew .skillsets {
+    margin: 30px auto;
+    border: 1px solid red; }
 
 /*# sourceMappingURL=main.css.map */

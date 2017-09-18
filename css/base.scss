@@ -1,22 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 body{
     margin: 0;
 }
 h1{
-    color: #5e6265;
-    font: normal 60px Ubuntu medium;
+    color: rgb(94, 98, 101);
+    font: normal 60px 'Raleway', sans-serif;
 }
 h2{
     color: #fff;
-    font: normal 48px Ubuntu medium;
+    font: normal 48px 'Raleway', sans-serif;
     background: #000;
 }
 h3{
     color: #8a9097;
-    font: italic 20px Ubuntu medium;
+    font: italic 20px 'Raleway', sans-serif;
 }
 h4{
     color: #5e6265;
-    font: normal 15px Ubuntu medium;
+    font: bold 15px 'Raleway', sans-serif;
     &:after{
         display: block;
         width: 30px;
@@ -27,12 +28,12 @@ h4{
 }
 h5{
     color: #878d92;
-    font: normal 13px Ubuntu medium;
+    font: normal 13px 'Raleway', sans-serif;
 }
 article{
     h1{
         color: #fff;
-        font: normal 16px Ubuntu medium;
+        font: normal 16px 'Raleway', sans-serif;
     }
 }
 nav{
@@ -43,17 +44,18 @@ a{
     text-align: center;
     padding: 10px 5px;
     @include box-sizing;
-    font: normal 13px Ubuntu medium;
+    font: normal 13px 'Raleway', sans-serif;
     cursor: pointer;
 }
 p{
     color: #4d5256;
     word-spacing: 3px;
     letter-spacing: 1.5px;
-    font: normal 15px Ubuntu medium;
+    line-height: 27px !important;
+    font: normal 15px 'Raleway', sans-serif;
 }
 button{
-    font: normal 13px Ubuntu medium;
+    font: normal 13px 'Raleway', sans-serif;
     cursor: pointer;    
     &.primary{
         border: none;
@@ -82,4 +84,8 @@ ul{
 *:hover{
     transition-delay: 200ms;
     transition-timing-function: ease;
+}
+figure,figcaption{
+    margin: 0;
+    padding: 0;
 }

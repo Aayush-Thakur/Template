@@ -21,6 +21,7 @@ header{
                 padding: 0 30px;
                 a{
                     height: 36px;
+                    font-weight: bold;
                     padding: 0 0 10px 0 ;
                     color: #5e6265;
                     text-align: center;
@@ -45,6 +46,7 @@ header{
             padding: 10px 20px;
             a{
                 color: #59cbc7;
+                text-transform: uppercase;
                 padding: 0 0 10px 0;
                 letter-spacing: 2px;
                 &:hover{
@@ -55,7 +57,7 @@ header{
         .search-icon{
             background: url("../images/search-icon.png") no-repeat center 0 / 70%;
             display: block;
-            margin: 5px 15px 0 0 ;
+            margin: 7px 14px 0 0 ;
             float: right;
             width: 50px;
             height: 30px;
