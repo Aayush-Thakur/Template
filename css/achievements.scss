@@ -1,0 +1,54 @@
+.achievements{
+    @include box-sizing;
+    margin: 0 0 30px 0;
+    height: 400px;
+    padding: 170px 0;
+    background: url("../images/Group5.png") no-repeat;
+    .achievements-container{
+        width: 80%;
+        margin: 0 auto;
+        height: 60px;
+        .achievement{
+            width: 33%;
+            text-align: center;
+            display: inline-block;
+            @include box-sizing;
+            &.right-border{
+                border-right: 1px solid #8a9097;
+            }
+            span{
+                display: inline-block;
+                width: 60px;
+                height: 60px; 
+                &.cup{           
+                    background: url("../images/Cup.png") no-repeat center/ cover;
+                }
+                &.book{
+                    background: url("../images/Book.png") no-repeat center/ cover;
+                }
+                &.pen{
+                    background: url("../images/Pen.png") no-repeat center/ cover;
+                }
+            }
+            .achievement-detail{
+                display: inline-block;
+                padding: 0 0 0 5px;
+                vertical-align: top;
+                p{
+                    margin: 0;
+                    color: #fff;
+                    letter-spacing: 0;
+                    word-spacing: 0;
+                    &.achievement-value{
+                        font-size: 55px;
+                        line-height: 25px;
+                        padding: 0 0 10px 0;
+                    }
+                    &.catagory{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

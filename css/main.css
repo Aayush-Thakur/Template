@@ -26,8 +26,9 @@ h4 {
     content: ""; }
 
 h5 {
-  color: #878d92;
-  font: normal 13px 'Raleway', sans-serif; }
+  color: #414A52;
+  text-transform: uppercase;
+  font: bold 13px 'Raleway', sans-serif; }
 
 article h1 {
   color: #fff;
@@ -48,7 +49,6 @@ p {
   color: #4d5256;
   word-spacing: 3px;
   letter-spacing: 1.5px;
-  line-height: 27px !important;
   font: normal 15px 'Raleway', sans-serif; }
 
 button {
@@ -218,7 +218,8 @@ header .subscription {
     float: left;
     width: 70%; }
     .collectives .collective-content p {
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      line-height: 27px !important; }
     .collectives .collective-content iframe {
       margin: 40px 0 50px -100px;
       border: 5px solid #f4f6f9;
@@ -285,7 +286,84 @@ header .subscription {
         margin-left: 5px;
         background: url("../images/linkedin _icon.png") no-repeat center/70%; }
   .crew .skillsets {
-    margin: 30px auto;
-    border: 1px solid red; }
+    margin: 30px auto; }
+    .crew .skillsets article {
+      display: inline-block;
+      width: 48.5%;
+      margin-bottom: 30px; }
+      .crew .skillsets article h5 {
+        margin: 0 0 10px 0;
+        line-height: 20px;
+        box-sizing: border-box; }
+        .crew .skillsets article h5:after {
+          clear: both;
+          display: table;
+          content: ""; }
+        .crew .skillsets article h5 span {
+          font-weight: bold;
+          float: right; }
+        .crew .skillsets article h5.align {
+          line-height: 13px; }
+      .crew .skillsets article .black-background {
+        background: #4d5256;
+        height: 10px;
+        position: relative; }
+        .crew .skillsets article .black-background .skillset-bar {
+          height: inherit;
+          background: #5bc9c5;
+          position: absolute;
+          top: 0;
+          left: 0; }
+          .crew .skillsets article .black-background .skillset-bar.design, .crew .skillsets article .black-background .skillset-bar.visual-design {
+            width: 90%; }
+          .crew .skillsets article .black-background .skillset-bar.prototyping {
+            width: 80%; }
+          .crew .skillsets article .black-background .skillset-bar.basic {
+            width: 95%; }
+    .crew .skillsets .left-margin {
+      margin-left: 2.3%; }
+
+.achievements {
+  box-sizing: border-box;
+  margin: 0 0 30px 0;
+  height: 400px;
+  padding: 170px 0;
+  background: url("../images/Group5.png") no-repeat; }
+  .achievements .achievements-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px; }
+    .achievements .achievements-container .achievement {
+      width: 33%;
+      text-align: center;
+      display: inline-block;
+      box-sizing: border-box; }
+      .achievements .achievements-container .achievement.right-border {
+        border-right: 1px solid #8a9097; }
+      .achievements .achievements-container .achievement span {
+        display: inline-block;
+        width: 60px;
+        height: 60px; }
+        .achievements .achievements-container .achievement span.cup {
+          background: url("../images/Cup.png") no-repeat center/cover; }
+        .achievements .achievements-container .achievement span.book {
+          background: url("../images/Book.png") no-repeat center/cover; }
+        .achievements .achievements-container .achievement span.pen {
+          background: url("../images/Pen.png") no-repeat center/cover; }
+      .achievements .achievements-container .achievement .achievement-detail {
+        display: inline-block;
+        padding: 0 0 0 5px;
+        vertical-align: top; }
+        .achievements .achievements-container .achievement .achievement-detail p {
+          margin: 0;
+          color: #fff;
+          letter-spacing: 0;
+          word-spacing: 0; }
+          .achievements .achievements-container .achievement .achievement-detail p.achievement-value {
+            font-size: 55px;
+            line-height: 25px;
+            padding: 0 0 10px 0; }
+          .achievements .achievements-container .achievement .achievement-detail p.catagory {
+            font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */

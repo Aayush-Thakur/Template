@@ -75,7 +75,46 @@
     }
     .skillsets{
         margin: 30px auto;
-        border: 1px solid red;
-        
+        article{
+            display: inline-block;
+            width: 48.5%;
+            margin-bottom: 30px;    
+            h5{
+                margin: 0 0 10px 0;
+                line-height: 20px;
+                @include box-sizing;
+                @include clearfix;
+                span{
+                    font-weight: bold;
+                    float: right;
+                }
+                &.align{
+                    line-height: 13px;
+                }
+            }
+            .black-background{
+                background: #4d5256;
+                height: 10px;
+                position: relative;
+                .skillset-bar{
+                    height: inherit;
+                    background: #5bc9c5;
+                    position: absolute;
+                    top: 0; left: 0;
+                    &.design, &.visual-design{
+                        width: 90%;
+                    }
+                    &.prototyping{
+                        width: 80%;
+                    }
+                    &.basic{
+                        width: 95%;
+                    }
+                }
+            }
+        }
+        .left-margin{
+            margin-left: 2.3%;
+        }
     }
 }
