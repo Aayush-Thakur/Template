@@ -325,7 +325,7 @@ header .subscription {
 
 .achievements {
   box-sizing: border-box;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
   height: 400px;
   padding: 170px 0;
   background: url("../images/Group5.png") no-repeat; }
@@ -366,5 +366,31 @@ header .subscription {
             padding: 0 0 20px 0; }
           .achievements .achievements-container .achievement .achievement-detail p.catagory {
             font-size: 15px; }
+
+.latest-articles {
+  padding: 80px 50px;
+  background: #f4f6f9; }
+  .latest-articles .article-header {
+    margin: 0 0 50px 100px; }
+    .latest-articles .article-header h4 {
+      width: 65%;
+      display: inline-block; }
+    .latest-articles .article-header h5 {
+      display: inline-block;
+      padding-right: 20px; }
+    .latest-articles .article-header select {
+      width: 25%;
+      padding: 0 0 10px 0;
+      font-size: 13px;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("../images/dropArrow.png") no-repeat;
+      background-position: 280px 5px;
+      border: none;
+      background: transparent;
+      color: rgba(65, 74, 82, 0.5);
+      border-bottom: 2px solid #5bc9c5; }
+      .latest-articles .article-header select:focus {
+        outline: none; }
 
 /*# sourceMappingURL=main.css.map */

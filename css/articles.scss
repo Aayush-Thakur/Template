@@ -1,0 +1,31 @@
+.latest-articles{
+    padding: 80px 50px;
+    background: #f4f6f9;
+    .article-header{
+        margin: 0 0 50px 100px;
+        h4{
+            width: 65%;
+            display: inline-block;
+        }
+        h5{
+            display: inline-block;
+            padding-right: 20px;
+        }
+        select{
+            width: 25%;
+            padding: 0 0 10px 0;
+            font-size: 13px;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("../images/dropArrow.png") no-repeat;
+            background-position: 280px 5px;
+            border: none;
+            background: transparent;
+            color: rgba(65,74,82,0.5);
+            border-bottom: 2px solid #5bc9c5;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}
