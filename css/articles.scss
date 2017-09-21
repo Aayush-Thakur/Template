@@ -17,6 +17,7 @@
             font-size: 13px;
             appearance: none;
             -webkit-appearance: none;
+            -moz-appearance:none; 
             background: url("../images/arrow-down.png") no-repeat 260px 6px;
             border: none;
             color: rgba(65,74,82,0.5);
@@ -31,6 +32,7 @@
         article{
             display: inline-block;
             position: relative;
+            vertical-align: top;
             width: 32%;
             a{
                 color: #5bc9c5;
@@ -70,7 +72,7 @@
                 border-bottom: 1px solid #E5E7E9;
             }
             &.spacing{
-                margin: 0 19px 50px 0; 
+                margin: 0 23px 50px 0; 
             }
             .more-links{
                 @include clearfix;

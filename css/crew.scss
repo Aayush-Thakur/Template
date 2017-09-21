@@ -14,7 +14,7 @@
         article{
             float: left;
             width: 23%;
-            height: 300px;
+            height: 320px;
             .hover-layer{
                 display: none;
                 background: rgba(91, 201, 197, 0.7);
@@ -41,19 +41,19 @@
             }
             &.peter{
                 margin-right: 15px;
-                background: url("../images/Peter.png") no-repeat;
+                background: url("../images/Peter.png") no-repeat 0 0 / cover;
             }
             &.blaz{
                 margin: 0 15px;
-                background: url("../images/Blaz.png") no-repeat;
+                background: url("../images/Blaz.png") no-repeat 0 0 / cover;
             }
             &.maryLou{
                 margin: 0 15px;
-                background: url("../images/Mary Lou.png") no-repeat;
+                background: url("../images/Mary Lou.png") no-repeat 0 0 / cover;
             }
             &.kobe{
                 margin-left: 15px;
-                background: url("../images/Dude.png") no-repeat;
+                background: url("../images/Dude.png") no-repeat 0 0 / cover;
             }
             .social-links{
                 a{

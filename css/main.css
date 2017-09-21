@@ -244,7 +244,7 @@ header .subscription {
     .crew .crew-members article {
       float: left;
       width: 23%;
-      height: 300px; }
+      height: 320px; }
       .crew .crew-members article .hover-layer {
         display: none;
         background: rgba(91, 201, 197, 0.7);
@@ -265,16 +265,16 @@ header .subscription {
         display: block; }
       .crew .crew-members article.peter {
         margin-right: 15px;
-        background: url("../images/Peter.png") no-repeat; }
+        background: url("../images/Peter.png") no-repeat 0 0/cover; }
       .crew .crew-members article.blaz {
         margin: 0 15px;
-        background: url("../images/Blaz.png") no-repeat; }
+        background: url("../images/Blaz.png") no-repeat 0 0/cover; }
       .crew .crew-members article.maryLou {
         margin: 0 15px;
-        background: url("../images/Mary Lou.png") no-repeat; }
+        background: url("../images/Mary Lou.png") no-repeat 0 0/cover; }
       .crew .crew-members article.kobe {
         margin-left: 15px;
-        background: url("../images/Dude.png") no-repeat; }
+        background: url("../images/Dude.png") no-repeat 0 0/cover; }
       .crew .crew-members article .social-links a {
         width: 20px;
         height: 20px;
@@ -384,6 +384,7 @@ header .subscription {
       font-size: 13px;
       appearance: none;
       -webkit-appearance: none;
+      -moz-appearance: none;
       background: url("../images/arrow-down.png") no-repeat 260px 6px;
       border: none;
       color: rgba(65, 74, 82, 0.5);
@@ -395,6 +396,7 @@ header .subscription {
     .latest-articles .article-wrapper article {
       display: inline-block;
       position: relative;
+      vertical-align: top;
       width: 32%; }
       .latest-articles .article-wrapper article a {
         color: #5bc9c5; }
@@ -428,7 +430,7 @@ header .subscription {
         padding: 0 0 20px 0;
         border-bottom: 1px solid #E5E7E9; }
       .latest-articles .article-wrapper article.spacing {
-        margin: 0 19px 50px 0; }
+        margin: 0 23px 50px 0; }
       .latest-articles .article-wrapper article .more-links:after {
         clear: both;
         display: table;
@@ -457,5 +459,95 @@ header .subscription {
         outline: none;
         color: #fff;
         background: #59cbc7; }
+
+.freebies {
+  padding: 100px 50px; }
+  .freebies h4 {
+    margin: 0 0 50px 100px; }
+  .freebies .freebies-content {
+    padding: 0 30px; }
+    .freebies .freebies-content p {
+      box-sizing: border-box;
+      font-size: 14px;
+      width: 50%;
+      display: inline-block;
+      margin: 0;
+      word-spacing: 2px;
+      letter-spacing: 0;
+      line-height: 2; }
+      .freebies .freebies-content p.left-content {
+        padding: 0 80px 0 0;
+        border-right: 1px solid #E5E7E9; }
+      .freebies .freebies-content p.right-content {
+        padding: 0 0 0 80px; }
+
+.contacts:after {
+  clear: both;
+  display: table;
+  content: ""; }
+.contacts button {
+  display: none;
+  padding: 15px 20px; }
+  .contacts button:hover {
+    color: #fff;
+    background: #59cbc7; }
+.contacts .button-wrapper {
+  text-align: center; }
+  .contacts .button-wrapper button {
+    margin: 70px 0;
+    display: inline-block; }
+.contacts .contact-container {
+  position: relative;
+  float: left;
+  width: 50%;
+  max-height: 450px;
+  box-sizing: border-box; }
+  .contacts .contact-container img {
+    width: 100%;
+    height: 450px; }
+  .contacts .contact-container .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(138, 144, 151, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 40px;
+    height: 450px; }
+    .contacts .contact-container .layer .contact {
+      text-align: center;
+      position: absolute;
+      max-height: 450px;
+      width: 100%;
+      top: 160px;
+      left: 0; }
+      .contacts .contact-container .layer .contact h5 {
+        display: none;
+        color: rgba(220, 220, 220, 0.7); }
+      .contacts .contact-container .layer .contact p {
+        display: none;
+        margin: 0 auto 30px;
+        font-size: 13px;
+        padding: 0 20px 40px;
+        border-bottom: 2px solid #fff;
+        color: #fff; }
+    .contacts .contact-container .layer .fa {
+      color: #fff;
+      display: none; }
+    .contacts .contact-container .layer span {
+      margin-left: 5px;
+      font-size: 15px;
+      color: #fff;
+      display: none; }
+    .contacts .contact-container .layer:hover {
+      background-color: rgba(138, 144, 151, 0.8); }
+      .contacts .contact-container .layer:hover h5 {
+        display: block; }
+      .contacts .contact-container .layer:hover p, .contacts .contact-container .layer:hover button, .contacts .contact-container .layer:hover .fa, .contacts .contact-container .layer:hover span {
+        display: inline-block; }
+
+footer {
+  height: 200px;
+  border: 1px solid; }
 
 /*# sourceMappingURL=main.css.map */
