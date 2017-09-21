@@ -418,13 +418,10 @@ header .subscription {
         color: #4d5256;
         font-size: 20px; }
         .latest-articles .article-wrapper article h2 span {
-          margin: 0 0 0 10px;
+          margin: 0 0 0 5px;
           font-size: 16px;
           vertical-align: top;
           display: none; }
-        .latest-articles .article-wrapper article h2:hover span {
-          transition: all 300ms;
-          display: inline; }
       .latest-articles .article-wrapper article p {
         font-size: 13px;
         line-height: 20px;
@@ -438,9 +435,15 @@ header .subscription {
         content: ""; }
       .latest-articles .article-wrapper article .more-links span {
         color: #4d5256;
-        font-size: 12px;
+        font-size: 13px;
         float: right;
         margin-right: 10px; }
+        .latest-articles .article-wrapper article .more-links span .fa {
+          vertical-align: top;
+          margin-right: 3px; }
+      .latest-articles .article-wrapper article:hover span {
+        transition: all 300ms;
+        display: inline; }
   .latest-articles .button {
     text-align: center; }
     .latest-articles .button .secondary {
@@ -448,5 +451,11 @@ header .subscription {
       letter-spacing: 1px;
       width: 12%;
       height: 50px; }
+      .latest-articles .button .secondary:focus, .latest-articles .button .secondary:active {
+        outline: none; }
+      .latest-articles .button .secondary:hover {
+        outline: none;
+        color: #fff;
+        background: #59cbc7; }
 
 /*# sourceMappingURL=main.css.map */
