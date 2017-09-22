@@ -88,13 +88,6 @@ header:after {
   clear: both;
   display: table;
   content: ""; }
-header .logo {
-  float: left;
-  background: url("../images/Logo.png") center/cover;
-  height: 110px;
-  width: 25%;
-  padding: 0;
-  margin: 0; }
 header nav, header .subscription {
   padding: 30px 0; }
 header nav {
@@ -144,6 +137,14 @@ header .subscription {
     float: right;
     width: 50px;
     height: 30px; }
+
+.logo {
+  float: left;
+  background: url("../images/Logo.png") center/cover;
+  height: 110px;
+  width: 25%;
+  padding: 0;
+  margin: 0; }
 
 .carousel-wrapper {
   width: 99%;
@@ -491,11 +492,6 @@ header .subscription {
   .contacts button:hover {
     color: #fff;
     background: #59cbc7; }
-.contacts .button-wrapper {
-  text-align: center; }
-  .contacts .button-wrapper button {
-    margin: 70px 0;
-    display: inline-block; }
 .contacts .contact-container {
   position: relative;
   float: left;
@@ -545,9 +541,94 @@ header .subscription {
         display: block; }
       .contacts .contact-container .layer:hover p, .contacts .contact-container .layer:hover button, .contacts .contact-container .layer:hover .fa, .contacts .contact-container .layer:hover span {
         display: inline-block; }
+.contacts .button-wrapper {
+  text-align: center; }
+  .contacts .button-wrapper .secondary {
+    margin: 70px 0;
+    display: inline-block; }
+  .contacts .button-wrapper .promotion {
+    background: linear-gradient(225deg, #70f6ea 0%, #51ccdc 100%);
+    max-height: 230px;
+    padding: 95px 0; }
+    .contacts .button-wrapper .promotion .container a, .contacts .button-wrapper .promotion .container h2 {
+      display: inline-block;
+      margin: 0;
+      background: none;
+      letter-spacing: 0;
+      word-spacing: 0;
+      font-size: 30px;
+      font-weight: 100; }
+    .contacts .button-wrapper .promotion .container a {
+      font-weight: 700;
+      border-bottom: 1px solid #fff;
+      padding: 0 0 2px 0;
+      color: #fff; }
+    .contacts .button-wrapper .promotion .container button {
+      vertical-align: top;
+      padding: 10px 20px;
+      display: inline-block;
+      margin: 0 0 0 20px;
+      color: #fff;
+      border-color: #fff; }
+      .contacts .button-wrapper .promotion .container button:hover {
+        background: #fff;
+        color: #59cbc7; }
 
 footer {
-  height: 200px;
-  border: 1px solid; }
+  padding: 90px;
+  word-spacing: 0;
+  letter-spacing: 0;
+  background: url("../images/bg.png") no-repeat; }
+  footer .logo-wrapper {
+    padding: 0 0 70px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+    footer .logo-wrapper div:after {
+      clear: both;
+      display: table;
+      content: ""; }
+    footer .logo-wrapper div .logo {
+      height: 70px;
+      background: url("../images/Logo.png") center/145%; }
+    footer .logo-wrapper p {
+      font-size: 13px;
+      color: #fff;
+      margin: 0; }
+  footer nav, footer p {
+    margin: 30px 0 0 20px; }
+    footer nav:after, footer p:after {
+      clear: both;
+      display: table;
+      content: ""; }
+    footer nav ul, footer p ul {
+      margin: 0;
+      padding: 0; }
+      footer nav ul li, footer p ul li {
+        margin-right: 20px;
+        display: inline-block;
+        text-align: center; }
+        footer nav ul li a, footer p ul li a {
+          font-size: 14px;
+          color: #fff; }
+    footer nav .footer-nav, footer p .footer-nav {
+      width: 70%;
+      float: left; }
+    footer nav .footer-share, footer p .footer-share {
+      width: 20%;
+      float: right; }
+      footer nav .footer-share li .fa, footer p .footer-share li .fa {
+        margin: 0 5px 0 0; }
+  footer p {
+    word-spacing: 0;
+    letter-spacing: 0;
+    color: #8A9097; }
+    footer p a {
+      padding: 0;
+      color: #fff;
+      font-size: 15px; }
+  footer a:hover {
+    border-bottom: 2px solid #4cafac;
+    color: #4cafac;
+    transition-duration: 200ms;
+    border: none; }
 
 /*# sourceMappingURL=main.css.map */
