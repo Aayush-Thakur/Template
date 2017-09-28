@@ -136,16 +136,21 @@ header {
       z-index: 10000;
       background: url("../images/Mobile Presentation.jpg"); }
       header nav.mobile-view li {
+        margin-top: 20px;
         padding: 40px 0;
         text-align: center;
         display: block;
         width: 100%; }
         header nav.mobile-view li a {
           padding: 0;
+          box-sizing: border-box;
           color: #fff;
           font-size: 30px;
           height: 50px;
           text-align: center; }
+          @media screen and (min-width: 600px) {
+            header nav.mobile-view li a {
+              font-size: 40px; } }
     header nav ul li {
       padding: 0 30px; }
       header nav ul li a {
@@ -261,7 +266,9 @@ header {
         width: 100px;
         height: 110px;
         background: url("../images/Mobile Presentation.jpg"); }
-        header .nav-toggle span {
+        header .nav-toggle .open {
+          transform: scale(1.5);
+          top: 54px;
           right: 30px; } }
     @media screen and (min-width: 1024px) {
       header .nav-toggle {

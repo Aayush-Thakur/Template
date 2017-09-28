@@ -23,16 +23,21 @@ header{
             z-index: 10000;
             background: url("../images/Mobile Presentation.jpg") ;
             li{
+                margin-top: 20px;
                 padding: 40px 0;
                 text-align: center;
                 display: block;
                 width: 100%;
                 a{
                     padding: 0;
+                    @include box-sizing;
                     color: #fff;
                     font-size: 30px;
                     height: 50px;
                     text-align: center;
+                    @include respond-to(tablet){
+                        font-size: 40px;
+                    }
                 }
             }
         }    
@@ -169,7 +174,9 @@ header{
             width: 100px;
             height: 110px;
             background: url("../images/Mobile Presentation.jpg");
-            span{
+            .open{
+                transform: scale(1.5);
+                top: 54px;
                 right: 30px;
             }
         }
