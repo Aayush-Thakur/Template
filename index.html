@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <a class="logo"></a>
-        <nav>
+        <a class="nav-toggle"><span></span></a>
+        <nav id="main-nav">
             <ul>
                 <li class="right-border"><a href="#">THE COLLECTIVE</a></li>
                 <li class="right-border"><a href="#">THE CREW</a></li>
@@ -20,322 +22,319 @@
                 <li><a href="#">FREEBIES</a></li>
             </ul>
         </nav>
-        <div class="subscription">
+        <div class="subscription" id="search-icon-wrapper">
             <label for="subcription" class="right-border"><a href="#">Subscribe</a></label>
-            <a href="http://google.com" target="_blank" class="search-icon"></a>
+            <a href="#" id="search-icon" class="search-icon"></a>
+        </div>
+        <div class="subscription search-bar" id="search">
+            <input type="text" name="searchTearm" placeholder="Enter text here" />
+            <i class="fa fa-close" id="close"></i>
         </div>
     </header>
-    <div class="carousel-wrapper">
-        <ul>
-            <li class="carousel-image-first">
+    <div class="main-content">
+        <div class="carousel-wrapper">
+            <ul>
+                <li class="carousel-image-first">
+                    <div class="layer">
+                        <div class="carousel-content">
+                            <h2>Introducing, Synthetica. A blissful HTML5/CSS3 Template, free forever.</h2>
+                            <button class="primary">Learn More</button>
+                            <p>Sybthetica is a <span class="bold italic">FREE</span>, HTML<sub>5</sub>/CSS<sub>3</sub> template,
+                                available for download exclusively via Codrops. </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-image-second">
+                    <div class="layer">
+                        <div class="carousel-content">
+                            <h2>Get a head start, with Synthetica Sketch file.</h2>
+                            <button class="primary">Download Sketch File</button>
+                            <p>Create your landing page in minutes with Synthetica's Sketch style guide.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-image-third">
+                    <div class="layer">
+                        <div class="carousel-content">
+                            <h2>Download Synthetica today, it's free forever.</h2>
+                            <button class="primary">Download Template</button>
+                            <p>Available exclusively from Codrops.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section class="collectives">
+            <h4>THE COLLECTIVES</h4>
+            <div class="collective-content">
+                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
+                    Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before
+                    they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha
+                    affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
+                <iframe src="https://www.youtube.com/embed/P8Fpyoehp9Y" allowfullscreen></iframe>
+                <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
+                    Kinfolk gluten-free lo-fi quinoa. </p>
+                <p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave
+                    kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb
+                    hashtag, hammock pour-over chambray viral VHS normcore.</p>
+            </div>
+        </section>
+        <div class="crew">
+            <h4>THE CREW</h4>
+            <div class="crew-members">
+                <article class="peter">
+                    <div class="hover-layer">
+                        <h2>Peter Finlan</h2>
+                        <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                        <div class="social-links">
+                            <a href="http://twitter.com" target="_blank" class="twitter">
+                                
+                            </a>
+                            <a href="http://linkedin.com" target="_blank" class="linkedin">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blaz">
+                    <div class="hover-layer">
+                        <h2>Blaz Robar</h2>
+                        <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                        <div class="social-links">
+                            <a href="http://twitter.com" target="_blank" class="twitter">
+                                
+                            </a>
+                            <a href="http://linkedin.com" target="_blank" class="linkedin">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="maryLou">
+                    <div class="hover-layer">
+                        <h2>MAry Lou</h2>
+                        <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                        <div class="social-links">
+                            <a href="http://twitter.com" target="_blank" class="twitter">
+                                
+                            </a>
+                            <a href="http://linkedin.com" target="_blank" class="linkedin">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="kobe">
+                    <div class="hover-layer">
+                        <h2>Kobe West</h2>
+                        <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
+                        <div class="social-links">
+                            <a href="http://twitter.com" target="_blank" class="twitter">
+                                
+                            </a>
+                            <a href="http://linkedin.com" target="_blank" class="linkedin">
+                                
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="skillsets">
+                <article>
+                    <h5>EXPERIENCE DESIGN<span>90%</span></h5>
+                    <div class="black-background">
+                        <div class="skillset-bar design"></div>
+                    </div>
+                </article>
+                <article class="left-margin">
+                    <h5>INTERACTIVE PROTOTYPING<span>80%</span></h5>
+                    <div class="black-background">
+                        <div class="skillset-bar prototyping"></div>
+                    </div>
+                </article>
+                <article>
+                    <h5 class="align">HTML<sub>5</sub>/CSS<sub>3</sub><span>95%</span></h5>
+                    <div class="black-background">
+                        <div class="skillset-bar basic"></div>
+                    </div>
+                </article>
+                <article class="left-margin">
+                    <h5>VISUAL DESIGN<span>90%</span></h5>
+                    <div class="black-background">
+                        <div class="skillset-bar visual-design"></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="achievements">
+            <div class="achievements-container">
+                <div class="achievement right-border">
+                    <span class="cup"></span>
+                    <div class="achievement-detail">
+                        <p class="achievement-value">24</p>
+                        <p class="catagory">AWARDS WON</p>
+                    </div>
+                </div>
+                <div class="achievement right-border">
+                    <span class="book"></span>
+                    <div class="achievement-detail">
+                        <p class="achievement-value">341</p>
+                        <p class="catagory">ARTICLES</p>
+                    </div>
+                </div>
+                <div class="achievement">
+                    <span class="pen"></span>
+                    <div class="achievement-detail">
+                        <p class="achievement-value">43</p>
+                        <p class="catagory">FREEBIES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-articles">
+            <div class="article-header">
+                <h4>LATEST ARTICLES</h4>
+                <h5>SORT BY</h5>
+                <select>
+                    <option value="experience design">Experience Design</option>
+                    <option value="experience design">Visual Design</option>
+                    <option value="experience design">UI Design</option>
+                    <option value="experience design">Pattern Design</option>
+                </select>
+            </div>
+            <div class="article-wrapper">
+                <article class="spacing">
+                    <img src="./images/article-01.jpg" alt="Product">
+                    <div class="layer"></div>
+                    <h2>8 solid tips when working with front-end developers<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">Product</a>
+                        <span><i class="fa fa-comments"></i>51</span>
+                    </div>
+                </article
+                ><article class="spacing">
+                    <img src="./images/article-02.jpg" alt="Teams">
+                    <div class="layer"></div>
+                    <h2>The 10 best traits of a awesome design leaders<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">Teams</a>
+                        <span><i class="fa fa-comments"></i>42</span>
+                    </div>
+                </article
+                ><article>
+                    <img src="./images/article-03.jpg" alt="Teams">
+                    <div class="layer"></div>
+                    <h2>How to design well collaboratively with an agile product team<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">Teams</a>
+                        <span><i class="fa fa-comments"></i>58</span>
+                    </div>
+                </article
+                ><article class="spacing">
+                    <img src="./images/article-04.jpg" alt="UX Design">
+                    <div class="layer"></div>
+                    <h2>The essentials of modern interaction design (mobile + tablet)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">UX Design</a>
+                        <span><i class="fa fa-comments"></i>14</span>
+                    </div>
+                </article
+                ><article class="spacing">
+                    <img src="./images/article-05.jpg" alt="Product">
+                    <div class="layer"></div>
+                    <h2>Overcoming barriers encountered in the pitch process (part 1)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">Product</a>
+                        <span><i class="fa fa-comments"></i>55</span>
+                    </div>
+                </article
+                ><article>
+                    <img src="./images/article-06.jpg" alt="UX Design">
+                    <div class="layer"></div>
+                    <h2>10 things we've learnt about our users (Case Study)<span>></span></h2>
+                    <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
+                    <div class="more-links">
+                        <a href="#">UX Design</a>
+                        <span><i class="fa fa-comments"></i>20</span>
+                    </div>
+                </article>
+            </div>
+            <div class="button">
+                <button class="secondary" type="button">VIEW MORE</button>
+            </div>
+        </div>
+        <section class="freebies">
+            <h4>FRESHEST FREEBIES</h4>
+            <div class="freebies-content">
+                <p class="left-content">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p
+                ><p class="right-content">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
+            </div>
+        </section>
+        <div class="contacts">
+            <div class="contact-container">
+                <img src="./images/freebie-01.png" alt="freebie_image1">
                 <div class="layer">
-                    <div class="carousel-content">
-                        <h2>Introducing, Synthetica. A blissful HTML5/CSS3 Template, free forever.</h2>
-                        <button class="primary">Learn More</button>
-                        <p>Sybthetica is a <span class="bold italic">FREE</span>, HTML<sub>5</sub>/CSS<sub>3</sub> template,
-                            available for download exclusively via Codrops. </p>
-                    </div>
-                    <div class="popUp">
-                        This is the Pop Up.
-                    </div>
+                    <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>19</span>    
+                    <article class="contact">
+                        <h5>21/10/2017</h5>
+                        <p>SEDNA HTML CSS TEMPLATE</p>
+                        <div>
+                            <button class="secondary">DOWNLOAD</button>
+                        </div>
+                    </article>
                 </div>
-            </li>
-            <li class="carousel-image-second">
+            </div
+            ><div class="contact-container">
+                <img src="./images/freebie-02.png" alt="freebie_image1">
                 <div class="layer">
-                    <div class="carousel-content">
-                        <h2>Get a head start, with Synthetica Sketch file.</h2>
-                        <button class="primary">Download Sketch File</button>
-                        <p>Create your landing page in minutes with Synthetica's Sketch style guide.</p>
-                    </div>
-                    <div class="popUp">
-                        This is the Pop Up.
-                    </div>
+                    <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>52</span>
+                    <article class="contact">
+                        <h5>21/10/2017</h5>
+                        <p>LAND.IO SKETCH TEMPLATE</p>
+                        <div>
+                            <button class="secondary">DOWNLOAD</button>
+                        </div>
+                    </article>
                 </div>
-            </li>
-            <li class="carousel-image-third">
+            </div
+            ><div class="contact-container">
+                <img src="./images/freebie-03.jpg" alt="freebie_image1">
                 <div class="layer">
-                    <div class="carousel-content">
-                        <h2>Download Synthetica today, it's free forever.</h2>
-                        <button class="primary">Download Template</button>
-                        <p>Available exclusively from Codrops.</p>
-                    </div>
-                    <div class="popUp">
-                        This is the Pop Up.
-                    </div>
+                    <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>98</span>
+                    <article class="contact">
+                        <h5>21/10/2017</h5>
+                        <p>SYNTHETICA HTML5/CSS3 TEMPLATE</p>
+                        <div>
+                            <button class="secondary">DOWNLOAD</button>
+                        </div>
+                    </article>
                 </div>
-            </li>
-        </ul>
-    </div>
-    <section class="collectives">
-        <h4>THE COLLECTIVES</h4>
-        <div class="collective-content">
-            <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
-                Kinfolk gluten-free lo-fi quinoa. Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before
-                they sold out. Kale chips chillwave kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha
-                affogato gluten-free authentic slow-carb hashtag, hammock pour-over chambray viral VHS normcore.</p>
-            <iframe src="https://www.youtube.com/embed/P8Fpyoehp9Y" allowfullscreen></iframe>
-            <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress, banjo normcore trust fund hella.
-                Kinfolk gluten-free lo-fi quinoa. </p>
-            <p>Pabst kitsch ennui hoodie meggings banjo. Schlitz tacos kitsch godard before they sold out. Kale chips chillwave
-                kickstarter photo booth cronut cold-pressed. Banjo fixie umami kombucha affogato gluten-free authentic slow-carb
-                hashtag, hammock pour-over chambray viral VHS normcore.</p>
-        </div>
-    </section>
-    <div class="crew">
-        <h4>THE CREW</h4>
-        <div class="crew-members">
-            <article class="peter">
-                <div class="hover-layer">
-                    <h2>Peter Finlan</h2>
-                    <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
-                    <div class="social-links">
-                        <a href="http://twitter.com" target="_blank" class="twitter">
-                            
-                        </a>
-                        <a href="http://linkedin.com" target="_blank" class="linkedin">
-                            
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article class="blaz">
-                <div class="hover-layer">
-                    <h2>Blaz Robar</h2>
-                    <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
-                    <div class="social-links">
-                        <a href="http://twitter.com" target="_blank" class="twitter">
-                            
-                        </a>
-                        <a href="http://linkedin.com" target="_blank" class="linkedin">
-                            
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article class="maryLou">
-                <div class="hover-layer">
-                    <h2>MAry Lou</h2>
-                    <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
-                    <div class="social-links">
-                        <a href="http://twitter.com" target="_blank" class="twitter">
-                            
-                        </a>
-                        <a href="http://linkedin.com" target="_blank" class="linkedin">
-                            
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article class="kobe">
-                <div class="hover-layer">
-                    <h2>Kobe West</h2>
-                    <p>8-bit aesthetic kitsch 90's humblebrag. Gastropub tacos hoodie letterpress.</p>
-                    <div class="social-links">
-                        <a href="http://twitter.com" target="_blank" class="twitter">
-                            
-                        </a>
-                        <a href="http://linkedin.com" target="_blank" class="linkedin">
-                            
-                        </a>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="skillsets">
-            <article>
-                <h5>EXPERIENCE DESIGN<span>90%</span></h5>
-                <div class="black-background">
-                    <div class="skillset-bar design"></div>
-                </div>
-            </article>
-            <article class="left-margin">
-                <h5>INTERACTIVE PROTOTYPING<span>80%</span></h5>
-                <div class="black-background">
-                    <div class="skillset-bar prototyping"></div>
-                </div>
-            </article>
-            <article>
-                <h5 class="align">HTML<sub>5</sub>/CSS<sub>3</sub><span>95%</span></h5>
-                <div class="black-background">
-                    <div class="skillset-bar basic"></div>
-                </div>
-            </article>
-            <article class="left-margin">
-                <h5>VISUAL DESIGN<span>90%</span></h5>
-                <div class="black-background">
-                    <div class="skillset-bar visual-design"></div>
-                </div>
-            </article>
-        </div>
-    </div>
-    <div class="achievements">
-        <div class="achievements-container">
-            <div class="achievement right-border">
-                <span class="cup"></span>
-                <div class="achievement-detail">
-                    <p class="achievement-value">24</p>
-                    <p class="catagory">AWARDS WON</p>
+            </div
+            ><div class="contact-container">
+                <img src="./images/freebie-04.jpg" alt="freebie_image1">
+                <div class="layer">
+                    <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>59</span>
+                    <article class="contact">
+                        <h5>21/10/2017</h5>
+                        <p>FREE LOGO CONCEPTS BY KOBY WEST</p>
+                        <div>
+                            <button class="secondary">DOWNLOAD</button>
+                        </div>
+                    </article>
                 </div>
             </div>
-            <div class="achievement right-border">
-                <span class="book"></span>
-                <div class="achievement-detail">
-                    <p class="achievement-value">341</p>
-                    <p class="catagory">ARTICLES</p>
-                </div>
-            </div>
-            <div class="achievement">
-                <span class="pen"></span>
-                <div class="achievement-detail">
-                    <p class="achievement-value">43</p>
-                    <p class="catagory">FREEBIES</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="latest-articles">
-        <div class="article-header">
-            <h4>LATEST ARTICLES</h4>
-            <h5>SORT BY</h5>
-            <select>
-                <option value="experience design">Experience Design</option>
-                <option value="experience design">Visual Design</option>
-                <option value="experience design">UI Design</option>
-                <option value="experience design">Pattern Design</option>
-            </select>
-        </div>
-        <div class="article-wrapper">
-            <article class="spacing">
-                <img src="./images/article-01.jpg" alt="Product">
-                <div class="layer"></div>
-                <h2>8 solid tips when working with front-end developers<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">Product</a>
-                    <span><i class="fa fa-comments"></i>51</span>
-                </div>
-            </article
-            ><article class="spacing">
-                <img src="./images/article-02.jpg" alt="Teams">
-                <div class="layer"></div>
-                <h2>The 10 best traits of a awesome design leaders<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">Teams</a>
-                    <span><i class="fa fa-comments"></i>42</span>
-                </div>
-            </article
-            ><article>
-                <img src="./images/article-03.jpg" alt="Teams">
-                <div class="layer"></div>
-                <h2>How to design well collaboratively with an agile product team<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">Teams</a>
-                    <span><i class="fa fa-comments"></i>58</span>
-                </div>
-            </article
-            ><article class="spacing">
-                <img src="./images/article-04.jpg" alt="UX Design">
-                <div class="layer"></div>
-                <h2>The essentials of modern interaction design (mobile + tablet)<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">UX Design</a>
-                    <span><i class="fa fa-comments"></i>14</span>
-                </div>
-            </article
-            ><article class="spacing">
-                <img src="./images/article-05.jpg" alt="Product">
-                <div class="layer"></div>
-                <h2>Overcoming barriers encountered in the pitch process (part 1)<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">Product</a>
-                    <span><i class="fa fa-comments"></i>55</span>
-                </div>
-            </article
-            ><article>
-                <img src="./images/article-06.jpg" alt="UX Design">
-                <div class="layer"></div>
-                <h2>10 things we've learnt about our users (Case Study)<span>></span></h2>
-                <p>A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus...</p>
-                <div class="more-links">
-                    <a href="#">UX Design</a>
-                    <span><i class="fa fa-comments"></i>20</span>
-                </div>
-            </article>
-        </div>
-        <div class="button">
-            <button class="secondary" type="button">VIEW MORE</button>
-        </div>
-    </div>
-    <section class="freebies">
-        <h4>FRESHEST FREEBIES</h4>
-        <div class="freebies-content">
-            <p class="left-content">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p
-            ><p class="right-content">A posuere donec senectus suspendisse bibendum magna ridiculus a justo orci parturient suspendisse ad rhoncus cursus ut parturient viverra elit aliquam ultrices est sem. Tellus nam ad fermentum ac enim est duis facilisis congue a lacus adipiscing consequat risus consectetur scelerisque integer suspendisse a mus integer elit.</p>
-        </div>
-    </section>
-    <div class="contacts">
-        <div class="contact-container">
-            <img src="./images/freebie-01.png" alt="freebie_image1">
-            <div class="layer">
-                <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>19</span>    
-                <article class="contact">
-                    <h5>21/10/2017</h5>
-                    <p>SEDNA HTML CSS TEMPLATE</p>
-                    <div>
-                        <button class="secondary">DOWNLOAD</button>
+            <div class="button-wrapper">
+                <button class="secondary" type="button">VIEW MORE</button>
+                <div class="promotion">
+                    <div class="container">
+                        <h2>Get started now. Download Synthetica <a href="#">FREE</a>, via Codrops.</h2>
+                        <button type="button" class="secondary">GET STARTED</button>
                     </div>
-                </article>
-            </div>
-        </div
-        ><div class="contact-container">
-            <img src="./images/freebie-02.png" alt="freebie_image1">
-            <div class="layer">
-                <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>52</span>
-                <article class="contact">
-                    <h5>21/10/2017</h5>
-                    <p>LAND.IO SKETCH TEMPLATE</p>
-                    <div>
-                        <button class="secondary">DOWNLOAD</button>
-                    </div>
-                </article>
-            </div>
-        </div
-        ><div class="contact-container">
-            <img src="./images/freebie-03.jpg" alt="freebie_image1">
-            <div class="layer">
-                <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>98</span>
-                <article class="contact">
-                    <h5>21/10/2017</h5>
-                    <p>SYNTHETICA HTML5/CSS3 TEMPLATE</p>
-                    <div>
-                        <button class="secondary">DOWNLOAD</button>
-                    </div>
-                </article>
-            </div>
-        </div
-        ><div class="contact-container">
-            <img src="./images/freebie-04.jpg" alt="freebie_image1">
-            <div class="layer">
-                <a href="#"><i class="like-counter fa fa-heart-o"></i></a><span>59</span>
-                <article class="contact">
-                    <h5>21/10/2017</h5>
-                    <p>FREE LOGO CONCEPTS BY KOBY WEST</p>
-                    <div>
-                        <button class="secondary">DOWNLOAD</button>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="button-wrapper">
-            <button class="secondary" type="button">VIEW MORE</button>
-            <div class="promotion">
-                <div class="container">
-                    <h2>Get started now. Download Synthetica <a href="#">FREE</a>, via Codrops.</h2>
-                    <button type="button" class="secondary">GET STARTED</button>
                 </div>
             </div>
         </div>
@@ -360,6 +359,8 @@
         </nav>
         <p>A free website template created exclusively for <a href="#">Codrops</a></p>
     </footer>
+
+    <script src="./js/header.js"></script>
 </body>
 
 </html>

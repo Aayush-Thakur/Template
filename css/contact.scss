@@ -21,8 +21,6 @@
         .layer{
             position: absolute;
             top: 0; left: 0;
-            background-color: rgba(138, 144, 151, 0.5);
-            width: 100%;
             @include box-sizing;
             padding: 20px 40px;
             height: 450px;
@@ -57,7 +55,6 @@
                 display: none;
             }
             &:hover{
-                background-color: rgba(138, 144, 151, 0.8);
                 h5{
                     display: block;
                 }

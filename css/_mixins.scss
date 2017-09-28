@@ -14,3 +14,24 @@
     color: #4cafac;
     transition-duration: 200ms;
 }
+
+// Respond to mixin for media queries.
+@mixin respond-to($type, $media:none){
+    $device-smartphone: 320px;
+    $device-tablet: 600px;
+    $device-desktop: 1024px;
+    $device-widescreen: $device-desktop;
+
+    @if $type == smartphone {
+        @media screen and (min-width:$device-smartphone){ @content; }
+    }
+
+    @if $type == tablet {
+        @media screen and (min-width:$device-tablet){ @content; }
+    }
+
+    @if $type == widescreen {
+        @media screen and (min-width:$device-desktop){ @content; }
+    }
+
+}

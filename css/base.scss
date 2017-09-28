@@ -90,3 +90,26 @@ figure,figcaption{
     margin: 0;
     padding: 0;
 }
+.layer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+.logo{
+    background: url("../images/Logo.png") no-repeat center center / cover;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    float: left;
+    margin: 0;
+    @include respond-to(tablet){
+        background: url("../images/Logo.png") no-repeat center / cover;
+        width: 40%;
+        height: 110px;
+    }
+    @include respond-to(widescreen){
+        width: 25%;
+    }
+}
