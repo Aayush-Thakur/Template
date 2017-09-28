@@ -223,9 +223,10 @@ header {
       width: 30px;
       border-radius: 15%;
       height: 3px;
-      transition: opacity 2s ease-in-out;
+      transition: background 1s ease-in-out;
       background-color: #fff; }
       header .nav-toggle .open:before {
+        transition: all 1s ease-in-out;
         content: "";
         display: block;
         top: -10px;
@@ -235,6 +236,7 @@ header {
         height: 3px;
         background-color: #fff; }
       header .nav-toggle .open:after {
+        transition: all 1s ease-in-out;
         content: "";
         display: block;
         top: 10px;
@@ -244,13 +246,14 @@ header {
         height: 3px;
         background-color: #fff; }
       header .nav-toggle .open.close {
+        transition: background 200ms ease-in-out;
         background: transparent; }
         header .nav-toggle .open.close:before {
-          transition: transform 700ms ease-in-out;
+          transition: transform 1s ease-in-out;
           transform: rotate(45deg);
           transform-origin: 2px 0; }
         header .nav-toggle .open.close:after {
-          transition: transform 700ms ease-in-out;
+          transition: transform 1s ease-in-out;
           transform: rotate(-45deg);
           transform-origin: -2px 2px; }
     @media screen and (min-width: 600px) {
