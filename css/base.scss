@@ -83,8 +83,7 @@ ul{
     }
 }
 *:hover{
-    transition-delay: 200ms;
-    transition-timing-function: ease;
+    transition: border-bottom 2s ease-in-out;
 }
 figure,figcaption{
     margin: 0;

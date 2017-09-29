@@ -10,10 +10,10 @@ header{
     }
     nav{
         @include box-sizing;
-        @include clearfix;  
+        @include clearfix; 
         @include respond-to(widescreen){
             float: left;
-            margin-left: 130px;
+            margin-left: 13%;
         }  
         &.mobile-view{
             position: absolute;
@@ -119,7 +119,7 @@ header{
         position: absolute; 
         top: 0px;
         right: 0px;
-        width: 50px;
+        width: 10%;
         height: 100px;
         .open{
             position: absolute;
@@ -171,13 +171,12 @@ header{
         }
         
         @include respond-to(tablet){
-            width: 100px;
             height: 110px;
             background: url("../images/Mobile Presentation.jpg");
             .open{
                 transform: scale(1.5);
                 top: 54px;
-                right: 30px;
+                right: 27%;
             }
         }
         @include respond-to(widescreen){
