@@ -292,7 +292,7 @@ header {
     box-sizing: border-box;
     width: 33.33%;
     height: 500px; }
-    .carousel-wrapper li .layer {
+    .carousel-wrapper li .carousel-layer {
       margin: 0;
       color: #fff;
       position: relative;
