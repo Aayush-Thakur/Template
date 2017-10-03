@@ -8,8 +8,14 @@ h1{
 }
 h2{
     color: #fff;
-    font: normal 48px 'Raleway', sans-serif;
+    font: bold 18px 'Raleway', sans-serif;
     background: #000;
+    @include respond-to(tablet){
+        font: normal 30px 'Raleway', sans-serif;
+    }
+    @include respond-to(widescreen){
+        font: normal 48px 'Raleway', sans-serif;
+    }
 }
 h3{
     color: #8a9097;
@@ -60,9 +66,12 @@ button{
     &.primary{
         border: none;
         letter-spacing: 3px;
-        padding: 20px;
+        padding: 10px 20px;
         color: #fff;
         background: #59cbc7;
+        @include respond-to(tablet){
+            padding: 20px;
+        }
     }
     &.secondary{
         color: #59cbc7;
@@ -111,4 +120,7 @@ figure,figcaption{
     @include respond-to(widescreen){
         width: 25%;
     }
+}
+ul{
+    padding: 0;
 }

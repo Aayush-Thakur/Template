@@ -15,10 +15,13 @@
         float: left;
         @include box-sizing;
         width: 33.33%;
-        height: 500px;
+        height: 400px;
+        @include respond-to(tablet){
+            height: 500px;
+        }
         .carousel-layer{
             margin: 0;
-            
+            background-color: rgba(0, 0, 0, 0.4);
             color: #fff;
             position: relative;
             padding: 0;
@@ -27,15 +30,22 @@
         .carousel-content{
             color: #fff;
             text-align: center;
-            width: 80%;
+            width: 90%;
+            padding: 60px 0 0 0;
             margin: 0 auto;
-            padding: 80px 0;
-        }
-        p{  
-            color: #fff;
-            margin: 60px 0 0 0 ;
-            padding: 30px;
-            border-top: 1px solid #8a9097;
+            @include respond-to(tablet){
+                width: 80%;
+                padding: 80px 0;
+            }
+            p{  
+                color: #fff;
+                margin: 60px 0 0 0 ;
+                padding: 30px 0;
+                border-top: 1px solid #8a9097;
+                @include respond-to(tablet){
+                    padding: 30px;
+                }
+            }
         }
         &.carousel-image-first{
             background: url("../images/carousel-image1.png") no-repeat center / cover;
@@ -53,18 +63,9 @@
             font-style: italic;
         }
         .primary{
-            margin-top: 50px;
-        }
-        .popUp{
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-            padding: 20px ;
-            border: 1px solid #8a9097;
-        }
-        &.layer{
-            &:hover{
-                background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 40px;
+            @include respond-to(tablet){
+                margin-top: 50px;
             }
         }
     }

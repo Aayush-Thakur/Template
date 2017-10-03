@@ -8,8 +8,14 @@ h1 {
 
 h2 {
   color: #fff;
-  font: normal 48px 'Raleway', sans-serif;
+  font: bold 18px 'Raleway', sans-serif;
   background: #000; }
+  @media screen and (min-width: 600px) {
+    h2 {
+      font: normal 30px 'Raleway', sans-serif; } }
+  @media screen and (min-width: 1025px) {
+    h2 {
+      font: normal 48px 'Raleway', sans-serif; } }
 
 h3 {
   color: #8a9097;
@@ -57,9 +63,12 @@ button {
   button.primary {
     border: none;
     letter-spacing: 3px;
-    padding: 20px;
+    padding: 10px 20px;
     color: #fff;
     background: #59cbc7; }
+    @media screen and (min-width: 600px) {
+      button.primary {
+        padding: 20px; } }
   button.secondary {
     color: #59cbc7;
     background: transparent;
@@ -101,9 +110,12 @@ figure, figcaption {
       background: url("../images/Logo.png") no-repeat center/cover;
       width: 40%;
       height: 110px; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .logo {
       width: 25%; } }
+
+ul {
+  padding: 0; }
 
 header {
   position: relative; }
@@ -113,7 +125,7 @@ header {
     content: ""; }
   header nav, header .subscription {
     display: none; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       header nav, header .subscription {
         display: block;
         padding: 30px 0; } }
@@ -123,10 +135,15 @@ header {
       clear: both;
       display: table;
       content: ""; }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       header nav {
-        float: left;
-        margin-left: 13%; } }
+        float: right;
+        margin-right: 3%; } }
+    @media screen and (min-width: 1025px) and (max-width: 1280px) {
+      header nav {
+        width: 55%;
+        float: right;
+        margin: 0; } }
     header nav.mobile-view {
       position: absolute;
       width: 100%;
@@ -217,7 +234,7 @@ header {
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 10%;
+    width: 11%;
     height: 100px; }
     header .nav-toggle .open {
       position: absolute;
@@ -268,7 +285,7 @@ header {
           transform: scale(1.5);
           top: 54px;
           right: 27%; } }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1025px) {
       header .nav-toggle {
         display: none; } }
 
@@ -291,9 +308,13 @@ header {
     float: left;
     box-sizing: border-box;
     width: 33.33%;
-    height: 500px; }
+    height: 400px; }
+    @media screen and (min-width: 600px) {
+      .carousel-wrapper li {
+        height: 500px; } }
     .carousel-wrapper li .carousel-layer {
       margin: 0;
+      background-color: rgba(0, 0, 0, 0.4);
       color: #fff;
       position: relative;
       padding: 0;
@@ -301,14 +322,21 @@ header {
     .carousel-wrapper li .carousel-content {
       color: #fff;
       text-align: center;
-      width: 80%;
-      margin: 0 auto;
-      padding: 80px 0; }
-    .carousel-wrapper li p {
-      color: #fff;
-      margin: 60px 0 0 0;
-      padding: 30px;
-      border-top: 1px solid #8a9097; }
+      width: 90%;
+      padding: 60px 0 0 0;
+      margin: 0 auto; }
+      @media screen and (min-width: 600px) {
+        .carousel-wrapper li .carousel-content {
+          width: 80%;
+          padding: 80px 0; } }
+      .carousel-wrapper li .carousel-content p {
+        color: #fff;
+        margin: 60px 0 0 0;
+        padding: 30px 0;
+        border-top: 1px solid #8a9097; }
+        @media screen and (min-width: 600px) {
+          .carousel-wrapper li .carousel-content p {
+            padding: 30px; } }
     .carousel-wrapper li.carousel-image-first {
       background: url("../images/carousel-image1.png") no-repeat center/cover; }
     .carousel-wrapper li.carousel-image-second {
@@ -321,135 +349,189 @@ header {
       background: none;
       font-style: italic; }
     .carousel-wrapper li .primary {
-      margin-top: 50px; }
-    .carousel-wrapper li .popUp {
-      position: absolute;
-      bottom: 5px;
-      left: 5px;
-      padding: 20px;
-      border: 1px solid #8a9097; }
-    .carousel-wrapper li.layer:hover {
-      background-color: rgba(0, 0, 0, 0.5); }
+      margin-top: 40px; }
+      @media screen and (min-width: 600px) {
+        .carousel-wrapper li .primary {
+          margin-top: 50px; } }
 
 .collectives {
-  width: 80%;
+  width: 90%;
   cursor: default;
-  margin: 140px auto 100px; }
+  margin: 50px auto 30px; }
   .collectives:after {
     clear: both;
     display: table;
     content: ""; }
-  .collectives h4 {
-    float: left;
-    width: 25%; }
-  .collectives .collective-content {
-    float: left;
-    width: 70%; }
-    .collectives .collective-content p {
-      margin-bottom: 30px;
-      line-height: 27px !important; }
-    .collectives .collective-content iframe {
-      margin: 40px 0 50px -100px;
-      border: 5px solid #f4f6f9;
+  @media screen and (min-width: 600px) {
+    .collectives {
       width: 80%;
-      height: 300px; }
+      margin: 80px auto 50px; } }
+  @media screen and (min-width: 1025px) {
+    .collectives {
+      margin: 140px auto 100px; } }
+  @media screen and (min-width: 600px) {
+    .collectives h4 {
+      float: left;
+      width: 30%; } }
+  @media screen and (min-width: 600px) {
+    .collectives .collective-content {
+      float: left;
+      width: 70%; } }
+  .collectives .collective-content p {
+    margin-bottom: 30px;
+    line-height: 27px !important; }
+  .collectives .collective-content iframe {
+    border: 5px solid #f4f6f9;
+    width: 100%;
+    height: 300px;
+    margin: 20px 0; }
+    @media screen and (min-width: 600px) {
+      .collectives .collective-content iframe {
+        width: 80%;
+        margin: 40px 0 50px -100px; } }
 
 .crew {
-  background: #f4f6f9;
-  padding: 80px 50px; }
+  background: #F4F6F9;
+  padding: 20px 0; }
+  @media screen and (min-width: 600px) {
+    .crew {
+      padding: 80px 50px; } }
   .crew h4 {
-    margin: 50px 0 30px 100px; }
+    width: 90%;
+    margin: 10px auto; }
+    @media screen and (min-width: 1025px) {
+      .crew h4 {
+        margin: 50px 0 30px 100px; } }
   .crew .skillsets, .crew .crew-members {
-    width: 96%;
+    width: 90%;
+    margin: 30px auto;
     box-sizing: border-box; }
     .crew .skillsets:after, .crew .crew-members:after {
       clear: both;
       display: table;
       content: ""; }
-  .crew .crew-members {
-    margin: 60px auto; }
-    .crew .crew-members article {
-      float: left;
-      width: 23%;
-      height: 320px; }
-      .crew .crew-members article .hover-layer {
-        display: none;
-        background: rgba(91, 201, 197, 0.7);
-        text-align: center;
-        padding: 50px 0;
-        box-sizing: border-box;
-        height: inherit; }
-        .crew .crew-members article .hover-layer h2 {
-          background: transparent;
-          font-size: 15px;
-          text-transform: uppercase; }
-        .crew .crew-members article .hover-layer p {
-          padding: 10px 20px;
-          word-spacing: 0;
-          letter-spacing: 0;
-          color: #fff; }
-      .crew .crew-members article:hover .hover-layer {
-        display: block; }
-      .crew .crew-members article.peter {
-        margin-right: 15px;
-        background: url("../images/Peter.png") no-repeat 0 0/cover; }
-      .crew .crew-members article.blaz {
-        margin: 0 15px;
-        background: url("../images/Blaz.png") no-repeat 0 0/cover; }
-      .crew .crew-members article.maryLou {
-        margin: 0 15px;
-        background: url("../images/Mary Lou.png") no-repeat 0 0/cover; }
-      .crew .crew-members article.kobe {
-        margin-left: 15px;
-        background: url("../images/Dude.png") no-repeat 0 0/cover; }
-      .crew .crew-members article .social-links a {
-        width: 20px;
-        height: 20px;
-        padding: 0;
-        display: inline-block; }
-      .crew .crew-members article .social-links .twitter {
-        margin-right: 5px;
-        background: url("../images/twitter_icon.png") no-repeat center/70%; }
-      .crew .crew-members article .social-links .linkedin {
-        margin-left: 5px;
-        background: url("../images/linkedin _icon.png") no-repeat center/70%; }
-  .crew .skillsets {
-    margin: 30px auto; }
-    .crew .skillsets article {
-      display: inline-block;
-      width: 48.5%;
-      margin-bottom: 30px; }
-      .crew .skillsets article h5 {
-        margin: 0 0 10px 0;
-        line-height: 20px;
-        box-sizing: border-box; }
-        .crew .skillsets article h5:after {
-          clear: both;
-          display: table;
-          content: ""; }
-        .crew .skillsets article h5 span {
-          font-weight: bold;
-          float: right; }
-        .crew .skillsets article h5.align {
-          line-height: 13px; }
-      .crew .skillsets article .black-background {
-        background: #4d5256;
-        height: 10px;
-        position: relative; }
-        .crew .skillsets article .black-background .skillset-bar {
-          height: inherit;
-          background: #5bc9c5;
-          position: absolute;
-          top: 0;
-          left: 0; }
-          .crew .skillsets article .black-background .skillset-bar.design, .crew .skillsets article .black-background .skillset-bar.visual-design {
-            width: 90%; }
-          .crew .skillsets article .black-background .skillset-bar.prototyping {
-            width: 80%; }
-          .crew .skillsets article .black-background .skillset-bar.basic {
-            width: 95%; }
+    @media screen and (min-width: 600px) {
+      .crew .skillsets, .crew .crew-members {
+        width: 96%;
+        margin: 45px 0; } }
+    @media screen and (min-width: 1025px) {
+      .crew .skillsets, .crew .crew-members {
+        margin: 60px auto; } }
+  .crew .crew-members article {
+    width: 100%;
+    min-height: 320px;
+    max-height: 500px;
+    margin: 30px 0; }
+    @media screen and (min-width: 600px) {
+      .crew .crew-members article {
+        display: inline-block;
+        vertical-align: top;
+        width: 48%; } }
+    @media screen and (min-width: 1025px) {
+      .crew .crew-members article {
+        width: 23%; } }
+    .crew .crew-members article .hover-layer {
+      display: none;
+      background: rgba(91, 201, 197, 0.7);
+      text-align: center;
+      padding: 100px 0;
+      box-sizing: border-box;
+      min-height: 320px;
+      max-height: 500px; }
+      @media screen and (min-width: 600px) {
+        .crew .crew-members article .hover-layer {
+          padding: 80px 0; } }
+      .crew .crew-members article .hover-layer h2 {
+        font-size: 15px;
+        background: transparent;
+        text-transform: uppercase; }
+      .crew .crew-members article .hover-layer p {
+        padding: 10px 20px;
+        word-spacing: 0;
+        letter-spacing: 0;
+        color: #fff;
+        font-size: 15px; }
+    .crew .crew-members article:hover .hover-layer {
+      display: block; }
+    .crew .crew-members article.peter {
+      background: url("../images/Peter.png") no-repeat top center/cover; }
+      @media screen and (min-width: 600px) {
+        .crew .crew-members article.peter {
+          margin-right: 1%; } }
+      @media screen and (min-width: 1025px) {
+        .crew .crew-members article.peter {
+          margin: 0 1% 0 0; } }
+    .crew .crew-members article.blaz {
+      background: url("../images/Blaz.png") no-repeat top center/cover; }
+      @media screen and (min-width: 600px) {
+        .crew .crew-members article.blaz {
+          margin-left: 1%; } }
+      @media screen and (min-width: 1025px) {
+        .crew .crew-members article.blaz {
+          margin: 0 1.1%; } }
+    .crew .crew-members article.maryLou {
+      background: url("../images/Mary Lou.png") no-repeat top center/cover; }
+      @media screen and (min-width: 600px) {
+        .crew .crew-members article.maryLou {
+          margin-right: 1%; } }
+      @media screen and (min-width: 1025px) {
+        .crew .crew-members article.maryLou {
+          margin: 0 1.1%; } }
+    .crew .crew-members article.kobe {
+      background: url("../images/Dude.png") no-repeat top center/cover; }
+      @media screen and (min-width: 600px) {
+        .crew .crew-members article.kobe {
+          margin-left: 1%; } }
+      @media screen and (min-width: 1025px) {
+        .crew .crew-members article.kobe {
+          margin: 0 0 0 1%; } }
+    .crew .crew-members article .social-links a {
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      display: inline-block; }
+    .crew .crew-members article .social-links .twitter {
+      margin-right: 5px;
+      background: url("../images/twitter_icon.png") no-repeat center/70%; }
+    .crew .crew-members article .social-links .linkedin {
+      margin-left: 5px;
+      background: url("../images/linkedin _icon.png") no-repeat center/70%; }
+  .crew .skillsets article {
+    margin: 20px 0; }
+    @media screen and (min-width: 600px) {
+      .crew .skillsets article {
+        display: inline-block;
+        width: 48.5%; } }
+    @media screen and (min-width: 1025px) {
+      .crew .skillsets article {
+        margin-bottom: 30px; } }
+    .crew .skillsets article h5 {
+      margin: 0 0 10px 0;
+      line-height: 20px;
+      box-sizing: border-box; }
+      .crew .skillsets article h5:after {
+        clear: both;
+        display: table;
+        content: ""; }
+      .crew .skillsets article h5 span {
+        font-weight: bold;
+        float: right; }
+      .crew .skillsets article h5.align {
+        line-height: 13px; }
+    .crew .skillsets article .black-background {
+      background: #4d5256;
+      height: 10px;
+      position: relative; }
+      .crew .skillsets article .black-background .skillset-bar {
+        height: inherit;
+        background: #5bc9c5;
+        position: absolute;
+        width: 0;
+        top: 0;
+        left: 0; }
+  @media screen and (min-width: 600px) {
     .crew .skillsets .left-margin {
-      margin-left: 2.3%; }
+      margin-left: 2.3%; } }
 
 .achievements {
   box-sizing: border-box;

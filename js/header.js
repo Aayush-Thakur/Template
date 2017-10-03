@@ -13,10 +13,9 @@ $(".nav-toggle").on("click",function(){
     if($("#main-nav").css("display") != "none"){
         $("#main-nav").removeClass("mobile-view");
         $("#main-nav").hide();
-        if($(window).height() > 750){
+        if($(window).height() > 730){
             $(".logo:first").css("width","40%");
         }
-        // $(".logo:first").css("width","40%");
         $(".main-content").show();
     }
     else{

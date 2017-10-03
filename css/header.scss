@@ -12,9 +12,14 @@ header{
         @include box-sizing;
         @include clearfix; 
         @include respond-to(widescreen){
-            float: left;
-            margin-left: 13%;
+            float: right;
+            margin-right: 3%;
         }  
+        @include respond-to(custom){
+            width: 55%;
+            float: right;
+            margin: 0;
+        }
         &.mobile-view{
             position: absolute;
             width: 100%;
@@ -62,6 +67,7 @@ header{
         border-right: 1px solid #8a9097;
     }
     .subscription{
+        // width: 20%;
         float: right;
         background: url("../images/Mobile Presentation.jpg");
         line-height: 46px;
@@ -119,7 +125,7 @@ header{
         position: absolute; 
         top: 0px;
         right: 0px;
-        width: 10%;
+        width: 11%;
         height: 100px;
         .open{
             position: absolute;

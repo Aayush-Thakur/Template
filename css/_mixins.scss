@@ -19,8 +19,7 @@
 @mixin respond-to($type, $media:none){
     $device-smartphone: 320px;
     $device-tablet: 600px;
-    $device-desktop: 1024px;
-    $device-widescreen: $device-desktop;
+    $device-widescreen: 1025px;
 
     @if $type == smartphone {
         @media screen and (min-width:$device-smartphone){ @content; }
@@ -31,7 +30,10 @@
     }
 
     @if $type == widescreen {
-        @media screen and (min-width:$device-desktop){ @content; }
+        @media screen and (min-width:$device-widescreen){ @content; }
     }
 
+    @if $type == custom {
+        @media screen and (min-width: 1025px) and (max-width: 1280px){ @content; }
+    }
 }
