@@ -1,34 +1,67 @@
 footer{
-    padding: 90px;
+    padding: 50px 15px 20px;
     word-spacing: 0;
     letter-spacing: 0;
-    background: url("../images/bg.png") no-repeat;
+    max-height: 600px;
+    background: url("../images/bg.png") no-repeat center center/ cover;
+    @include respond-to(tablet){
+        padding: 90px 20px;
+    }
     .logo-wrapper{
-        padding: 0 0 70px 0;
+        padding: 0 0 40px 0;
         border-bottom: 1px solid rgba(255,255,255,0.15);
+        @include respond-to(tablet){
+            padding: 0 0 70px 0;
+        }
         div{
             @include clearfix;
             .logo{
                 height: 70px;
-                background: url("../images/Logo.png") center/145%;
+                background: url("../images/Logo.png") no-repeat center center/ 120%;
+                @include respond-to(tablet){
+                    width: 300px;
+                }
             }
         }
         p{
+            text-align: center;
             font-size: 13px;
             color: #fff;
-            margin: 0;
+            margin: 20px 0 0 ;
+            @include respond-to(tablet){
+                margin: 0 0 0 30px;
+                text-align: left;
+            }
         }
     }
     nav, p{
-        margin: 30px 0 0 20px;
+        margin: 20px 0 0;
         @include clearfix;
+        @include respond-to(tablet){
+            margin: 30px 0 0 20px;
+        }
         ul{
             margin: 0;
             padding: 0;
             li{ 
-                margin-right: 20px;
-                display: inline-block;
-                text-align: center;
+                display: block;
+                padding: 20px 0 10px;
+                border-bottom: 1px dotted rgba(255, 255, 255,0.3);
+                @include respond-to(tablet){
+                    display: inline-block;
+                    text-align: center;
+                    border: none;
+                    a{
+                        padding: 20px 4px;
+                        @include hover;
+                    }
+                }
+                @include respond-to(widescreen){
+                    margin-right: 20px;
+                    a{
+                        padding: 10px 5px;
+                    }
+                }
                 a{
                     font-size: 14px;
                     color: #fff;
@@ -36,12 +69,16 @@ footer{
             }
         }
         .footer-nav{
-            width: 70%;
-            float: left;
+            @include respond-to(tablet){
+                width: 70%;
+                float: left;
+            }
         }
         .footer-share{
-            width: 20%;
-            float: right;
+            @include respond-to(tablet){
+                width: 25%;
+                float: right;
+            }
             li{
                 .fa{
                     margin: 0 5px 0 0;
@@ -57,11 +94,7 @@ footer{
             padding: 0;
             color: #fff;
             font-size: 15px;
-
         }
     }
-    a:hover{
-        @include hover;
-        border: none;
-    }
+
 }

@@ -1,39 +1,79 @@
 .latest-articles{
-    padding: 80px 50px;
+    @include box-sizing;
+    padding: 30px 15px;
     background: #f4f6f9;
+    @include respond-to(tablet){
+        padding: 80px 10%;
+    }
+    @include respond-to(widescreen){
+        padding: 80px 50px;
+    }
     .article-header{
-        margin: 0 0 50px 100px;
+        @include respond-to(tablet){
+            margin: 10px 0 50px 0;
+        }
+        @include respond-to(widescreen){
+            margin: 0 0 50px 100px;
+            padding-right: 2%;
+        }
         h4{
-            width: 65%;
-            display: inline-block;
+            margin-bottom: 10px;
+            @include respond-to(tablet){
+                width: 55%;
+                display: inline-block;
+            }
+            @include respond-to(widescreen){
+                width: 65%;
+            }
         }
         h5{
             display: inline-block;
-            padding-right: 20px;
+            width: 16%;
+            @include respond-to(tablet){
+                width: 11%;
+                padding-right: 20px;
+            }
+            @include respond-to(widescreen){
+                width: 6%;
+            }
         }
         select{
-            width: 25%;
-            padding: 0 0 10px 0;
+            width: 100%;    
+            padding: 0 0 10px 5px;
             font-size: 13px;
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance:none; 
-            background: url("../images/arrow-down.png") no-repeat 260px 6px;
             border: none;
+            background: url("../images/arrow-down.png") no-repeat 98% 6px;
             color: rgba(65,74,82,0.5);
             border-bottom: 2px solid #5bc9c5;
+            @include respond-to(tablet){
+                padding: 0 0 10px 0;
+                width: 25%;   
+            }
             &:focus{
                 outline: none;
             }
         }
     }
     .article-wrapper{
-        padding: 0 20px;
+        padding: 0;
+        @include respond-to(widescreen){
+            padding: 0 20px;
+        }
         article{
-            display: inline-block;
             position: relative;
-            vertical-align: top;
-            width: 32%;
+            margin: 50px 0 0;
+            @include respond-to(widescreen){
+                display: inline-block;
+                width: 32%;
+                margin: 0;
+                vertical-align: top;
+                &.spacing{
+                    margin: 0 2% 50px 0; 
+                }
+            }
             a{
                 color: #5bc9c5;
             }
@@ -66,9 +106,6 @@
                 padding: 0 0 20px 0;
                 border-bottom: 1px solid #E5E7E9;
             }
-            &.spacing{
-                margin: 0 23px 50px 0; 
-            }
             .more-links{
                 @include clearfix;
                 span{
@@ -92,11 +129,15 @@
     }
     .button{
         text-align: center;
+        margin: 40px 0 20px;
+        @include respond-to(tablet){
+            margin: 0;
+        }
         .secondary{
             margin: 20px auto;
             letter-spacing: 1px;
-            width: 12%;
             height: 50px;
+            padding: 15px 20px;
             &:focus, &:active{
                 outline: none;
             }

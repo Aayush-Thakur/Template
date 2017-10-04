@@ -48,6 +48,7 @@ nav{
 }
 a{
     text-decoration: none;
+    position: relative;
     text-align: center;
     padding: 10px 5px;
     @include box-sizing;
@@ -90,9 +91,6 @@ ul{
     li{
         display: inline-block;
     }
-}
-*:hover{
-    transition: border-bottom 2s ease-in-out;
 }
 figure,figcaption{
     margin: 0;

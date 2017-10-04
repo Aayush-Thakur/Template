@@ -1,19 +1,33 @@
 .achievements{
     @include box-sizing;
-    height: 400px;
-    padding: 170px 0;
-    background: url("../images/Group5.png") no-repeat;
+    padding: 70px 0;
+    height: 440px;
+    background: url("../images/Group5.png") no-repeat center / cover;
+    @include respond-to(tablet){
+        padding: 170px 0;
+        height: 400px;
+        background: url("../images/Group5.png") no-repeat;
+    }
     .achievements-container{
-        width: 80%;
-        margin: 0 auto;
+        margin: 5px auto;
         height: 60px;
+        @include respond-to(tablet){
+            margin: 0 auto;
+        }
+        @include respond-to(widescreen){
+            width: 80%;
+        }
         .achievement{
-            width: 33%;
             text-align: center;
-            display: inline-block;
+            margin: 0 auto 50px;
             @include box-sizing;
-            &.right-border{
-                border-right: 1px solid #8a9097;
+            @include respond-to(tablet){
+                display: inline-block;
+                width: 32%;
+                margin: 0 0 0 5px;
+                &.right-border{
+                    border-right: 1px solid #8a9097;
+                }
             }
             span{
                 display: inline-block;
@@ -31,9 +45,12 @@
             }
             .achievement-detail{
                 display: inline-block;
-                padding: 0 0 0 5px;
+                padding: 0;
                 vertical-align: top;
-                text-align: left;
+                @include respond-to(tablet){
+                    padding: 0 0 0 5px;
+                    text-align: left;
+                }
                 p{
                     margin: 0;
                     color: #fff;
