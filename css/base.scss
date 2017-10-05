@@ -79,6 +79,9 @@ button{
         background: transparent;
         border: 2px solid #59cbc7;
     }
+    &:focus, &:active, &:visited{
+        outline: 0;
+    }
 }
 .bold{
     font-style: bold;
@@ -101,6 +104,9 @@ figure,figcaption{
     background-color: rgba(0, 0, 0, 0.5);
     &:hover{
         background-color: rgba(0, 0, 0, 0.8);
+        &.article-wrapper article{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
     }
 }
 .logo{
