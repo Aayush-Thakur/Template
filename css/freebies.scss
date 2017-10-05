@@ -6,6 +6,9 @@
     h4{
         margin: 40px 0;
         @include respond-to(tablet){
+            margin-left: 30px;
+        }
+        @include respond-to(widescreen){
             margin: 0 0 50px 100px;
         }
     }

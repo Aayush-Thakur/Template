@@ -91,25 +91,38 @@ header{
             position: absolute;
             top: 0; right: 0;
             display: none;
-            width: 30%;
+            width: 55%;
             input{
                 margin-left: 10px;
-                width: 76%;
+                width: 90%;
                 @include box-sizing;
                 padding: 5px;
-                color: #fff;
+                font-size: 20px;
                 border: none;
                 border-bottom: 2px solid #59cbc7;
                 background: transparent;
                 appearance: none;
                 -webkit-appearance: none;
                 -moz-appearance: none;
+                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                &::-moz-placeholder { /* Firefox 19+ */
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                &:-ms-input-placeholder { /* IE 10+ */
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                &:-moz-placeholder { /* Firefox 18- */
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                  
                 &:focus, &:active{
                     outline: none;
                 }
             }
             .fa{
-                margin-left: 30px;
+                margin-left: 10px;
                 color: #fff;
             }
         }

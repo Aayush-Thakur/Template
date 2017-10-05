@@ -11,14 +11,15 @@
     .contact-container{
         position: relative;
         float: left;
+        width: 100%;
         @include box-sizing;
         @include respond-to(tablet){
             width: 50%;
         }
         img{
             width: 100%;
-            height: 500px;
             display: block;
+            height: 320px;
             @include respond-to(tablet){
                 height: 450px;
             }
@@ -28,7 +29,7 @@
             top: 0; left: 0;
             @include box-sizing;
             padding: 20px 40px;
-            height: 500px;
+            height: 320px;
             @include respond-to(tablet){
                 height: 450px;
             }
@@ -37,17 +38,20 @@
                 position: absolute;
                 max-height: 500px;
                 width: 100%;
-                top: 140px;
+                top: 20%;
                 left: 0;
+                @include respond-to(tablet){
+                    top: 30%;
+                }
                 h5{
                     display: none;
                     color: rgba(220,220,220,0.7);
                 }
                 p{
                     display: none;
-                    margin: 0 auto 30px;
+                    margin: 10px 20px 30px;
                     font-size: 13px;
-                    padding: 0 20px 40px;
+                    padding-bottom: 20px;
                     border-bottom: 2px solid #fff;
                     color: #fff;
                 }

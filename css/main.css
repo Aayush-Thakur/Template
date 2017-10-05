@@ -63,7 +63,7 @@ button {
   cursor: pointer; }
   button.primary {
     border: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding: 10px 20px;
     color: #fff;
     background: #59cbc7; }
@@ -228,23 +228,35 @@ header {
       top: 0;
       right: 0;
       display: none;
-      width: 30%; }
+      width: 55%; }
       header .subscription.search-bar input {
         margin-left: 10px;
-        width: 76%;
+        width: 90%;
         box-sizing: border-box;
         padding: 5px;
-        color: #fff;
+        font-size: 20px;
         border: none;
         border-bottom: 2px solid #59cbc7;
         background: transparent;
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none; }
+        header .subscription.search-bar input::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: rgba(255, 255, 255, 0.7); }
+        header .subscription.search-bar input::-moz-placeholder {
+          /* Firefox 19+ */
+          color: rgba(255, 255, 255, 0.7); }
+        header .subscription.search-bar input:-ms-input-placeholder {
+          /* IE 10+ */
+          color: rgba(255, 255, 255, 0.7); }
+        header .subscription.search-bar input:-moz-placeholder {
+          /* Firefox 18- */
+          color: rgba(255, 255, 255, 0.7); }
         header .subscription.search-bar input:focus, header .subscription.search-bar input:active {
           outline: none; }
       header .subscription.search-bar .fa {
-        margin-left: 30px;
+        margin-left: 10px;
         color: #fff; }
   header .nav-toggle {
     display: inline-block;
@@ -549,7 +561,7 @@ header {
         left: 0; }
   @media screen and (min-width: 600px) {
     .crew .skillsets .left-margin {
-      margin-left: 2.1%; } }
+      margin-left: 2%; } }
   @media screen and (min-width: 1025px) {
     .crew .skillsets .left-margin {
       margin-left: 2.3%; } }
@@ -688,12 +700,17 @@ header {
       .latest-articles .article-wrapper article img {
         width: 100%;
         height: 225px; }
+        @media screen and (min-width: 600px) {
+          .latest-articles .article-wrapper article img {
+            height: 300px; } }
       .latest-articles .article-wrapper article .layer {
         position: absolute;
         top: 0;
         left: 0;
-        height: 225px;
-        max-height: 250px; }
+        height: 225px; }
+        @media screen and (min-width: 600px) {
+          .latest-articles .article-wrapper article .layer {
+            height: 300px; } }
       .latest-articles .article-wrapper article h2 {
         background: none;
         font-weight: 500;
@@ -728,9 +745,6 @@ header {
   .latest-articles .button {
     text-align: center;
     margin: 40px 0 20px; }
-    @media screen and (min-width: 600px) {
-      .latest-articles .button {
-        margin: 0; } }
     .latest-articles .button .secondary {
       margin: 20px auto;
       letter-spacing: 1px;
@@ -751,6 +765,9 @@ header {
   .freebies h4 {
     margin: 40px 0; }
     @media screen and (min-width: 600px) {
+      .freebies h4 {
+        margin-left: 30px; } }
+    @media screen and (min-width: 1025px) {
       .freebies h4 {
         margin: 0 0 50px 100px; } }
   @media screen and (min-width: 600px) {
@@ -788,14 +805,15 @@ header {
 .contacts .contact-container {
   position: relative;
   float: left;
+  width: 100%;
   box-sizing: border-box; }
   @media screen and (min-width: 600px) {
     .contacts .contact-container {
       width: 50%; } }
   .contacts .contact-container img {
     width: 100%;
-    height: 500px;
-    display: block; }
+    display: block;
+    height: 320px; }
     @media screen and (min-width: 600px) {
       .contacts .contact-container img {
         height: 450px; } }
@@ -805,7 +823,7 @@ header {
     left: 0;
     box-sizing: border-box;
     padding: 20px 40px;
-    height: 500px; }
+    height: 320px; }
     @media screen and (min-width: 600px) {
       .contacts .contact-container .layer {
         height: 450px; } }
@@ -814,16 +832,19 @@ header {
       position: absolute;
       max-height: 500px;
       width: 100%;
-      top: 140px;
+      top: 20%;
       left: 0; }
+      @media screen and (min-width: 600px) {
+        .contacts .contact-container .layer .contact {
+          top: 30%; } }
       .contacts .contact-container .layer .contact h5 {
         display: none;
         color: rgba(220, 220, 220, 0.7); }
       .contacts .contact-container .layer .contact p {
         display: none;
-        margin: 0 auto 30px;
+        margin: 10px 20px 30px;
         font-size: 13px;
-        padding: 0 20px 40px;
+        padding-bottom: 20px;
         border-bottom: 2px solid #fff;
         color: #fff; }
     .contacts .contact-container .layer .fa {
@@ -938,7 +959,8 @@ footer {
             text-align: center;
             border: none; }
             footer nav ul li a, footer p ul li a {
-              padding: 20px 4px; }
+              margin-left: 10px;
+              padding: 0 0 10px 0; }
               footer nav ul li a:after, footer p ul li a:after {
                 width: 100%;
                 height: 2px;
@@ -955,9 +977,7 @@ footer {
                 transform: scaleX(1); } }
         @media screen and (min-width: 1025px) {
           footer nav ul li, footer p ul li {
-            margin-right: 20px; }
-            footer nav ul li a, footer p ul li a {
-              padding: 10px 5px; } }
+            margin-right: 20px; } }
         footer nav ul li a, footer p ul li a {
           font-size: 14px;
           color: #fff; }
