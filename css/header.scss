@@ -29,10 +29,13 @@ header{
             background: url("../images/Mobile Presentation.jpg") ;
             li{
                 margin-top: 20px;
-                padding: 40px 0;
+                padding: 20px 0;
                 text-align: center;
                 display: block;
                 width: 100%;
+                @include respond-to(tablet){
+                    padding: 40px 0;
+                }
                 a{
                     padding: 0;
                     @include box-sizing;
@@ -42,6 +45,11 @@ header{
                     text-align: center;
                     @include respond-to(tablet){
                         font-size: 40px;
+                    }
+                    &:hover{
+                        &:after{
+                            visibility: hidden;
+                        }
                     }
                 }
             }
@@ -104,16 +112,16 @@ header{
                 appearance: none;
                 -webkit-appearance: none;
                 -moz-appearance: none;
-                &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                &::-webkit-input-placeholder {
                     color: rgba(255, 255, 255, 0.7);
                 }
-                &::-moz-placeholder { /* Firefox 19+ */
+                &::-moz-placeholder {
                     color: rgba(255, 255, 255, 0.7);
                 }
-                &:-ms-input-placeholder { /* IE 10+ */
+                &:-ms-input-placeholder { 
                     color: rgba(255, 255, 255, 0.7);
                 }
-                &:-moz-placeholder { /* Firefox 18- */
+                &:-moz-placeholder { 
                     color: rgba(255, 255, 255, 0.7);
                 }
                   
@@ -143,10 +151,10 @@ header{
             width: 30px;
             border-radius: 15%;
             height: 3px;
-            transition: background 1s ease-in-out;
+            transition: background 0.5s ease-in-out;
             background-color: #fff;
             &:before{
-                transition: all 1s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 content: "";
                 display: block;
                 top: -10px;
@@ -157,7 +165,7 @@ header{
                 background-color: #fff;
             }
             &:after{
-                transition: all 1s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 content: "";
                 display: block;
                 top: 10px;
@@ -172,12 +180,12 @@ header{
                 transition: background 200ms ease-in-out;
                 background: transparent;
                 &:before{
-                    transition: transform 1s ease-in-out;
+                    transition: transform 0.5s ease-in-out;
                     transform: rotate(45deg);      
                     transform-origin: 2px 0;   
                 }
                 &:after{
-                    transition: transform 1s ease-in-out;
+                    transition: transform 0.5s ease-in-out;
                     transform: rotate(-45deg);
                     transform-origin: -2px 2px;
                 }

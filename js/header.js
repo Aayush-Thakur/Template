@@ -17,6 +17,7 @@ $(".nav-toggle").on("click",function(){
             $(".logo:first").css("width","40%");
         }
         $(".main-content").show();
+        $("footer").show();
     }
     else{
         $("#main-nav").addClass("mobile-view");
@@ -26,9 +27,10 @@ $(".nav-toggle").on("click",function(){
         else{
             $(".logo:first").css("width","90%");
         }
-        $("#main-nav").css("height",($(window).height()));
         $("#main-nav").show();
+        $("#main-nav").css("height",screen.height);
         $(".main-content").hide();
+        $("footer").hide();
     }
         
 })

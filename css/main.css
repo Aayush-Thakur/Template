@@ -155,10 +155,13 @@ header {
       background: url("../images/Mobile Presentation.jpg"); }
       header nav.mobile-view li {
         margin-top: 20px;
-        padding: 40px 0;
+        padding: 20px 0;
         text-align: center;
         display: block;
         width: 100%; }
+        @media screen and (min-width: 600px) {
+          header nav.mobile-view li {
+            padding: 40px 0; } }
         header nav.mobile-view li a {
           padding: 0;
           box-sizing: border-box;
@@ -169,6 +172,8 @@ header {
           @media screen and (min-width: 600px) {
             header nav.mobile-view li a {
               font-size: 40px; } }
+          header nav.mobile-view li a:hover:after {
+            visibility: hidden; }
     header nav ul li {
       padding: 0 30px; }
       header nav ul li a {
@@ -246,16 +251,12 @@ header {
         -webkit-appearance: none;
         -moz-appearance: none; }
         header .subscription.search-bar input::-webkit-input-placeholder {
-          /* Chrome/Opera/Safari */
           color: rgba(255, 255, 255, 0.7); }
         header .subscription.search-bar input::-moz-placeholder {
-          /* Firefox 19+ */
           color: rgba(255, 255, 255, 0.7); }
         header .subscription.search-bar input:-ms-input-placeholder {
-          /* IE 10+ */
           color: rgba(255, 255, 255, 0.7); }
         header .subscription.search-bar input:-moz-placeholder {
-          /* Firefox 18- */
           color: rgba(255, 255, 255, 0.7); }
         header .subscription.search-bar input:focus, header .subscription.search-bar input:active {
           outline: none; }
@@ -278,10 +279,10 @@ header {
       width: 30px;
       border-radius: 15%;
       height: 3px;
-      transition: background 1s ease-in-out;
+      transition: background 0.5s ease-in-out;
       background-color: #fff; }
       header .nav-toggle .open:before {
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
         content: "";
         display: block;
         top: -10px;
@@ -291,7 +292,7 @@ header {
         height: 3px;
         background-color: #fff; }
       header .nav-toggle .open:after {
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
         content: "";
         display: block;
         top: 10px;
@@ -304,11 +305,11 @@ header {
         transition: background 200ms ease-in-out;
         background: transparent; }
         header .nav-toggle .open.close:before {
-          transition: transform 1s ease-in-out;
+          transition: transform 0.5s ease-in-out;
           transform: rotate(45deg);
           transform-origin: 2px 0; }
         header .nav-toggle .open.close:after {
-          transition: transform 1s ease-in-out;
+          transition: transform 0.5s ease-in-out;
           transform: rotate(-45deg);
           transform-origin: -2px 2px; }
     @media screen and (min-width: 600px) {
