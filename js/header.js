@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $(window).on("resize",function(){
+        if(screen.width > 1024){
+            $("#main-nav").show();  
+        }
+    })
+})
+
 $("#search-icon").on("click",function(){
     $("#search-icon-wrapper").hide();
     $("#main-nav").hide();
