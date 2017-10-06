@@ -2,6 +2,9 @@ header{
     .header-nav-wrapper{
         position: relative;
         @include clearfix;
+        &.cover{
+            background:  url("../images/Mobile Presentation.jpg");
+        }
         nav, .subscription{
             display: none;
             @include respond-to(widescreen){

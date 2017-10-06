@@ -125,6 +125,8 @@ header .header-nav-wrapper {
     clear: both;
     display: table;
     content: ""; }
+  header .header-nav-wrapper.cover {
+    background: url("../images/Mobile Presentation.jpg"); }
   header .header-nav-wrapper nav, header .header-nav-wrapper .subscription {
     display: none; }
     @media screen and (min-width: 1025px) {
