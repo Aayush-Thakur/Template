@@ -1,9 +1,10 @@
-$(document).ready(function(){
-    $(window).on("resize",function(){
-        if(screen.width > 1024){
-            $("#main-nav").show();  
-        }
-    })
+$(window).on("resize",function(){
+    if(screen.width > 1024){
+        $("#main-nav").show();  
+    }
+    else{
+        $("#main-nav").hide();
+    }
 })
 
 $("#search-icon").on("click",function(){
@@ -26,6 +27,7 @@ $(".nav-toggle").on("click",function(){
         if(screen.width > 600){
             $(".header-nav-wrapper").removeClass("cover");
         }
+        $("#main-nav").css("height","110px");
         $(".main-content").show();
         $("footer").show();
     }
