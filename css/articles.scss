@@ -27,10 +27,9 @@
             }
         }
         h5{
-            display: inline-block;
-            width: 16%;
             @include respond-to(tablet){
                 width: 11%;
+                display: inline-block;
                 padding-right: 20px;
             }
             @include respond-to(widescreen){

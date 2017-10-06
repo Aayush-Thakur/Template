@@ -658,16 +658,14 @@ header {
     @media screen and (min-width: 1025px) {
       .latest-articles .article-header h4 {
         width: 65%; } }
-  .latest-articles .article-header h5 {
-    display: inline-block;
-    width: 16%; }
-    @media screen and (min-width: 600px) {
-      .latest-articles .article-header h5 {
-        width: 11%;
-        padding-right: 20px; } }
-    @media screen and (min-width: 1025px) {
-      .latest-articles .article-header h5 {
-        width: 6%; } }
+  @media screen and (min-width: 600px) {
+    .latest-articles .article-header h5 {
+      width: 11%;
+      display: inline-block;
+      padding-right: 20px; } }
+  @media screen and (min-width: 1025px) {
+    .latest-articles .article-header h5 {
+      width: 6%; } }
   .latest-articles .article-header select {
     width: 100%;
     padding: 0 0 10px 5px;
