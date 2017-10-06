@@ -119,50 +119,45 @@ figure, figcaption {
 ul {
   padding: 0; }
 
-header {
+header .header-nav-wrapper {
   position: relative; }
-  header:after {
+  header .header-nav-wrapper:after {
     clear: both;
     display: table;
     content: ""; }
-  header nav, header .subscription {
+  header .header-nav-wrapper nav, header .header-nav-wrapper .subscription {
     display: none; }
     @media screen and (min-width: 1025px) {
-      header nav, header .subscription {
+      header .header-nav-wrapper nav, header .header-nav-wrapper .subscription {
         display: block;
         padding: 30px 0; } }
-  header nav {
+  header .header-nav-wrapper nav {
     box-sizing: border-box; }
-    header nav:after {
+    header .header-nav-wrapper nav:after {
       clear: both;
       display: table;
       content: ""; }
     @media screen and (min-width: 1025px) {
-      header nav {
+      header .header-nav-wrapper nav {
         float: right;
-        margin-right: 3%; } }
-    @media screen and (min-width: 1025px) and (max-width: 1280px) {
-      header nav {
-        width: 55%;
-        float: right;
-        margin: 0; } }
-    header nav.mobile-view {
+        margin-right: 2%; } }
+    header .header-nav-wrapper nav.mobile-view {
       position: absolute;
       width: 100%;
       top: 97px;
       margin: 0;
       z-index: 10000;
       background: url("../images/Mobile Presentation.jpg"); }
-      header nav.mobile-view li {
+      header .header-nav-wrapper nav.mobile-view li {
         margin-top: 20px;
         padding: 20px 0;
         text-align: center;
         display: block;
         width: 100%; }
         @media screen and (min-width: 600px) {
-          header nav.mobile-view li {
+          header .header-nav-wrapper nav.mobile-view li {
             padding: 40px 0; } }
-        header nav.mobile-view li a {
+        header .header-nav-wrapper nav.mobile-view li a {
           padding: 0;
           box-sizing: border-box;
           color: #fff;
@@ -170,20 +165,19 @@ header {
           height: 50px;
           text-align: center; }
           @media screen and (min-width: 600px) {
-            header nav.mobile-view li a {
+            header .header-nav-wrapper nav.mobile-view li a {
               font-size: 40px; } }
-          header nav.mobile-view li a:hover:after {
+          header .header-nav-wrapper nav.mobile-view li a:hover:after {
             visibility: hidden; }
-    header nav ul li {
+    header .header-nav-wrapper nav ul li {
       padding: 0 30px; }
-      header nav ul li a {
+      header .header-nav-wrapper nav ul li a {
         height: 36px;
-        font-weight: bold;
+        font-weight: 700;
         padding: 0 0 10px 0;
         color: #5e6265;
-        text-align: center;
-        word-spacing: 2px; }
-        header nav ul li a:after {
+        text-align: center; }
+        header .header-nav-wrapper nav ul li a:after {
           width: 100%;
           height: 2px;
           background: #4cafac;
@@ -194,24 +188,24 @@ header {
           visibility: hidden;
           left: 0;
           transition: all .2s ease-in-out; }
-        header nav ul li a:hover:after {
+        header .header-nav-wrapper nav ul li a:hover:after {
           visibility: visible;
           transform: scaleX(1); }
-  header .right-border {
+  header .header-nav-wrapper .right-border {
     border-right: 1px solid #8a9097; }
-  header .subscription {
+  header .header-nav-wrapper .subscription {
     float: right;
     background: url("../images/Mobile Presentation.jpg");
     line-height: 46px;
     height: 50px; }
-    header .subscription label {
+    header .header-nav-wrapper .subscription label {
       padding: 10px 20px; }
-      header .subscription label a {
+      header .header-nav-wrapper .subscription label a {
         color: #59cbc7;
         text-transform: uppercase;
         padding: 0 0 10px 0;
         letter-spacing: 2px; }
-        header .subscription label a:after {
+        header .header-nav-wrapper .subscription label a:after {
           width: 100%;
           height: 2px;
           background: #4cafac;
@@ -222,23 +216,23 @@ header {
           visibility: hidden;
           left: 0;
           transition: all .2s ease-in-out; }
-        header .subscription label a:hover:after {
+        header .header-nav-wrapper .subscription label a:hover:after {
           visibility: visible;
           transform: scaleX(1); }
-    header .subscription .search-icon {
+    header .header-nav-wrapper .subscription .search-icon {
       background: url("../images/search-icon.png") no-repeat center 0/70%;
       display: block;
       margin: 7px 14px 0 0;
       float: right;
       width: 50px;
       height: 30px; }
-    header .subscription.search-bar {
+    header .header-nav-wrapper .subscription.search-bar {
       position: absolute;
       top: 0;
       right: 0;
       display: none;
       width: 55%; }
-      header .subscription.search-bar input {
+      header .header-nav-wrapper .subscription.search-bar input {
         margin-left: 10px;
         width: 90%;
         box-sizing: border-box;
@@ -250,20 +244,20 @@ header {
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none; }
-        header .subscription.search-bar input::-webkit-input-placeholder {
+        header .header-nav-wrapper .subscription.search-bar input::-webkit-input-placeholder {
           color: rgba(255, 255, 255, 0.7); }
-        header .subscription.search-bar input::-moz-placeholder {
+        header .header-nav-wrapper .subscription.search-bar input::-moz-placeholder {
           color: rgba(255, 255, 255, 0.7); }
-        header .subscription.search-bar input:-ms-input-placeholder {
+        header .header-nav-wrapper .subscription.search-bar input:-ms-input-placeholder {
           color: rgba(255, 255, 255, 0.7); }
-        header .subscription.search-bar input:-moz-placeholder {
+        header .header-nav-wrapper .subscription.search-bar input:-moz-placeholder {
           color: rgba(255, 255, 255, 0.7); }
-        header .subscription.search-bar input:focus, header .subscription.search-bar input:active {
+        header .header-nav-wrapper .subscription.search-bar input:focus, header .header-nav-wrapper .subscription.search-bar input:active {
           outline: none; }
-      header .subscription.search-bar .fa {
+      header .header-nav-wrapper .subscription.search-bar .fa {
         margin-left: 10px;
         color: #fff; }
-  header .nav-toggle {
+  header .header-nav-wrapper .nav-toggle {
     display: inline-block;
     padding: 0;
     position: absolute;
@@ -271,7 +265,7 @@ header {
     right: 0px;
     width: 11%;
     height: 100px; }
-    header .nav-toggle .open {
+    header .header-nav-wrapper .nav-toggle .open {
       position: absolute;
       top: 48px;
       right: 10px;
@@ -281,7 +275,7 @@ header {
       height: 3px;
       transition: background 0.5s ease-in-out;
       background-color: #fff; }
-      header .nav-toggle .open:before {
+      header .header-nav-wrapper .nav-toggle .open:before {
         transition: all 0.5s ease-in-out;
         content: "";
         display: block;
@@ -291,7 +285,7 @@ header {
         position: absolute;
         height: 3px;
         background-color: #fff; }
-      header .nav-toggle .open:after {
+      header .header-nav-wrapper .nav-toggle .open:after {
         transition: all 0.5s ease-in-out;
         content: "";
         display: block;
@@ -301,27 +295,27 @@ header {
         border-radius: 15%;
         height: 3px;
         background-color: #fff; }
-      header .nav-toggle .open.close {
+      header .header-nav-wrapper .nav-toggle .open.close {
         transition: background 200ms ease-in-out;
         background: transparent; }
-        header .nav-toggle .open.close:before {
+        header .header-nav-wrapper .nav-toggle .open.close:before {
           transition: transform 0.5s ease-in-out;
           transform: rotate(45deg);
           transform-origin: 2px 0; }
-        header .nav-toggle .open.close:after {
+        header .header-nav-wrapper .nav-toggle .open.close:after {
           transition: transform 0.5s ease-in-out;
           transform: rotate(-45deg);
           transform-origin: -2px 2px; }
     @media screen and (min-width: 600px) {
-      header .nav-toggle {
+      header .header-nav-wrapper .nav-toggle {
         height: 110px;
         background: url("../images/Mobile Presentation.jpg"); }
-        header .nav-toggle .open {
+        header .header-nav-wrapper .nav-toggle .open {
           transform: scale(1.5);
           top: 54px;
-          right: 27%; } }
+          right: 30%; } }
     @media screen and (min-width: 1025px) {
-      header .nav-toggle {
+      header .header-nav-wrapper .nav-toggle {
         display: none; } }
 
 .carousel-wrapper {

@@ -1,208 +1,204 @@
 header{
-    position: relative;
-    @include clearfix;
-    nav, .subscription{
-        display: none;
-        @include respond-to(widescreen){
-            display: block;
-            padding: 30px 0;
-        }
-    }
-    nav{
-        @include box-sizing;
-        @include clearfix; 
-        @include respond-to(widescreen){
-            float: right;
-            margin-right: 3%;
-        }  
-        @include respond-to(custom){
-            width: 55%;
-            float: right;
-            margin: 0;
-        }
-        &.mobile-view{
-            position: absolute;
-            width: 100%;
-            top: 97px;
-            margin: 0;
-            z-index: 10000;
-            background: url("../images/Mobile Presentation.jpg") ;
-            li{
-                margin-top: 20px;
-                padding: 20px 0;
-                text-align: center;
+    .header-nav-wrapper{
+        position: relative;
+        @include clearfix;
+        nav, .subscription{
+            display: none;
+            @include respond-to(widescreen){
                 display: block;
+                padding: 30px 0;
+            }
+        }
+        nav{
+            @include box-sizing;
+            @include clearfix; 
+            @include respond-to(widescreen){
+                float: right;
+                margin-right: 2%;
+            }  
+            &.mobile-view{
+                position: absolute;
                 width: 100%;
-                @include respond-to(tablet){
-                    padding: 40px 0;
-                }
-                a{
-                    padding: 0;
-                    @include box-sizing;
-                    color: #fff;
-                    font-size: 30px;
-                    height: 50px;
+                top: 97px;
+                margin: 0;
+                z-index: 10000;
+                background: url("../images/Mobile Presentation.jpg") ;
+                li{
+                    margin-top: 20px;
+                    padding: 20px 0;
                     text-align: center;
+                    display: block;
+                    width: 100%;
                     @include respond-to(tablet){
-                        font-size: 40px;
+                        padding: 40px 0;
                     }
-                    &:hover{
-                        &:after{
-                            visibility: hidden;
+                    a{
+                        padding: 0;
+                        @include box-sizing;
+                        color: #fff;
+                        font-size: 30px;
+                        height: 50px;
+                        text-align: center;
+                        @include respond-to(tablet){
+                            font-size: 40px;
+                        }
+                        &:hover{
+                            &:after{
+                                visibility: hidden;
+                            }
                         }
                     }
                 }
+            }    
+            ul{
+                li{
+                    padding: 0 30px;
+                    a{
+                        height: 36px;
+                        font-weight: 700;
+                        padding: 0 0 10px 0 ;
+                        color: #5e6265;
+                        text-align: center;
+                        @include hover;
+                    }
+                }    
             }
-        }    
-        ul{
-            li{
-                padding: 0 30px;
+        }
+        .right-border{
+            border-right: 1px solid #8a9097;
+        }
+        .subscription{
+            float: right;
+            background: url("../images/Mobile Presentation.jpg");
+            line-height: 46px;
+            height: 50px;
+            label {
+                padding: 10px 20px;
                 a{
-                    height: 36px;
-                    font-weight: bold;
-                    padding: 0 0 10px 0 ;
-                    color: #5e6265;
-                    text-align: center;
-                    word-spacing: 2px; 
+                    color: #59cbc7;
+                    text-transform: uppercase;
+                    padding: 0 0 10px 0;
+                    letter-spacing: 2px;
                     @include hover;
                 }
-            }    
-        }
-    }
-    .right-border{
-        border-right: 1px solid #8a9097;
-    }
-    .subscription{
-        float: right;
-        background: url("../images/Mobile Presentation.jpg");
-        line-height: 46px;
-        height: 50px;
-        label {
-            padding: 10px 20px;
-            a{
-                color: #59cbc7;
-                text-transform: uppercase;
-                padding: 0 0 10px 0;
-                letter-spacing: 2px;
-                @include hover;
             }
-        }
-        .search-icon{
-            background: url("../images/search-icon.png") no-repeat center 0 / 70%;
-            display: block;
-            margin: 7px 14px 0 0 ;
-            float: right;
-            width: 50px;
-            height: 30px;
-        }
-        &.search-bar{
-            position: absolute;
-            top: 0; right: 0;
-            display: none;
-            width: 55%;
-            input{
-                margin-left: 10px;
-                width: 90%;
-                @include box-sizing;
-                padding: 5px;
-                font-size: 20px;
-                border: none;
-                border-bottom: 2px solid #59cbc7;
-                background: transparent;
-                appearance: none;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                &::-webkit-input-placeholder {
-                    color: rgba(255, 255, 255, 0.7);
-                }
-                &::-moz-placeholder {
-                    color: rgba(255, 255, 255, 0.7);
-                }
-                &:-ms-input-placeholder { 
-                    color: rgba(255, 255, 255, 0.7);
-                }
-                &:-moz-placeholder { 
-                    color: rgba(255, 255, 255, 0.7);
-                }
-                  
-                &:focus, &:active{
-                    outline: none;
-                }
-            }
-            .fa{
-                margin-left: 10px;
-                color: #fff;
-            }
-        }
-    }
-    .nav-toggle{
-        display: inline-block;
-        padding: 0;
-        position: absolute; 
-        top: 0px;
-        right: 0px;
-        width: 11%;
-        height: 100px;
-        .open{
-            position: absolute;
-            top: 48px;
-            right: 10px;
-            display: block;
-            width: 30px;
-            border-radius: 15%;
-            height: 3px;
-            transition: background 0.5s ease-in-out;
-            background-color: #fff;
-            &:before{
-                transition: all 0.5s ease-in-out;
-                content: "";
+            .search-icon{
+                background: url("../images/search-icon.png") no-repeat center 0 / 70%;
                 display: block;
-                top: -10px;
-                width: 30px;
-                border-radius: 15%;
-                position: absolute;
-                height: 3px;
-                background-color: #fff;
+                margin: 7px 14px 0 0 ;
+                float: right;
+                width: 50px;
+                height: 30px;
             }
-            &:after{
-                transition: all 0.5s ease-in-out;
-                content: "";
-                display: block;
-                top: 10px;
+            &.search-bar{
                 position: absolute;
+                top: 0; right: 0;
+                display: none;
+                width: 55%;
+                input{
+                    margin-left: 10px;
+                    width: 90%;
+                    @include box-sizing;
+                    padding: 5px;
+                    font-size: 20px;
+                    border: none;
+                    border-bottom: 2px solid #59cbc7;
+                    background: transparent;
+                    appearance: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    &::-webkit-input-placeholder {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    &::-moz-placeholder {
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    &:-ms-input-placeholder { 
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    &:-moz-placeholder { 
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    
+                    &:focus, &:active{
+                        outline: none;
+                    }
+                }
+                .fa{
+                    margin-left: 10px;
+                    color: #fff;
+                }
+            }
+        }
+        .nav-toggle{
+            display: inline-block;
+            padding: 0;
+            position: absolute; 
+            top: 0px;
+            right: 0px;
+            width: 11%;
+            height: 100px;
+            .open{
+                position: absolute;
+                top: 48px;
+                right: 10px;
+                display: block;
                 width: 30px;
                 border-radius: 15%;
                 height: 3px;
+                transition: background 0.5s ease-in-out;
                 background-color: #fff;
-            }
-
-            &.close{
-                transition: background 200ms ease-in-out;
-                background: transparent;
                 &:before{
-                    transition: transform 0.5s ease-in-out;
-                    transform: rotate(45deg);      
-                    transform-origin: 2px 0;   
+                    transition: all 0.5s ease-in-out;
+                    content: "";
+                    display: block;
+                    top: -10px;
+                    width: 30px;
+                    border-radius: 15%;
+                    position: absolute;
+                    height: 3px;
+                    background-color: #fff;
                 }
                 &:after{
-                    transition: transform 0.5s ease-in-out;
-                    transform: rotate(-45deg);
-                    transform-origin: -2px 2px;
+                    transition: all 0.5s ease-in-out;
+                    content: "";
+                    display: block;
+                    top: 10px;
+                    position: absolute;
+                    width: 30px;
+                    border-radius: 15%;
+                    height: 3px;
+                    background-color: #fff;
+                }
+
+                &.close{
+                    transition: background 200ms ease-in-out;
+                    background: transparent;
+                    &:before{
+                        transition: transform 0.5s ease-in-out;
+                        transform: rotate(45deg);      
+                        transform-origin: 2px 0;   
+                    }
+                    &:after{
+                        transition: transform 0.5s ease-in-out;
+                        transform: rotate(-45deg);
+                        transform-origin: -2px 2px;
+                    }
                 }
             }
-        }
-        
-        @include respond-to(tablet){
-            height: 110px;
-            background: url("../images/Mobile Presentation.jpg");
-            .open{
-                transform: scale(1.5);
-                top: 54px;
-                right: 27%;
+            
+            @include respond-to(tablet){
+                height: 110px;
+                background: url("../images/Mobile Presentation.jpg");
+                .open{
+                    transform: scale(1.5);
+                    top: 54px;
+                    right: 30%;
+                }
             }
-        }
-        @include respond-to(widescreen){
-            display: none;
+            @include respond-to(widescreen){
+                display: none;
+            }
         }
     }
 }
