@@ -2,9 +2,6 @@ $(window).on("resize",function(){
     if(screen.width > 1024){
         $("#main-nav").show();  
     }
-    else{
-        $("#main-nav").hide();
-    }
 })
 
 $("#search-icon").on("click",function(){
