@@ -13,7 +13,7 @@ $(".nav-toggle").on("click",function(){
     if($("#main-nav").css("display") != "none"){
         $("#main-nav").removeClass("mobile-view");
         $("#main-nav").hide();
-        if($(window).height() > 730){
+        if(screen.height > 736){
             $(".logo:first").css("width","40%");
         }
         $(".main-content").show();
@@ -21,7 +21,7 @@ $(".nav-toggle").on("click",function(){
     }
     else{
         $("#main-nav").addClass("mobile-view");
-        if($(window).height() < 750){
+        if(screen.height < 750){
             $(".logo:first").css("width","100%");
         }
         else{
