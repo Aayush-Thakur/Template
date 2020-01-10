@@ -576,8 +576,7 @@ header .header-nav-wrapper {
   @media screen and (min-width: 600px) {
     .achievements {
       padding: 170px 0;
-      height: 400px;
-      background: url("../images/Group5.png") no-repeat; } }
+      height: 400px; } }
   .achievements .achievements-container {
     margin: 5px auto;
     height: 60px; }
